@@ -1,0 +1,18 @@
+# Godot's import cache. Godot rebuilds it the first time the project opens.
+.godot/
+
+# Python
+__pycache__/
+
+# API keys
+.env
+
+# Voice previews from tools/voices.py design
+voice/previews/
+
+# Preview renders written by the Blender scripts (rebuilt on every run)
+assets/**/preview_*.png
+assets/**/preview_*.png.import
+
+# Personal planning notes (roadmap, prompts, analysis). Kept local.
+docs/

@@ -1,0 +1,152 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/title_screen.gd" id="1_title"]
+[ext_resource type="Texture2D" path="res://assets/ui/title.png" id="2_art"]
+
+[sub_resource type="SystemFont" id="Font_title"]
+font_names = PackedStringArray("Georgia", "Palatino Linotype", "Serif")
+font_weight = 700
+
+[sub_resource type="SystemFont" id="Font_sub"]
+font_names = PackedStringArray("Courier New", "Courier", "Monospace")
+font_weight = 700
+
+[sub_resource type="Gradient" id="Gradient_top"]
+offsets = PackedFloat32Array(0, 1)
+colors = PackedColorArray(0.05, 0.08, 0.15, 0.55, 0.05, 0.08, 0.15, 0)
+
+[sub_resource type="GradientTexture2D" id="Shade_top"]
+gradient = SubResource("Gradient_top")
+fill_from = Vector2(0, 0)
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="Style_button"]
+content_margin_left = 34.0
+content_margin_top = 10.0
+content_margin_right = 34.0
+content_margin_bottom = 10.0
+bg_color = Color(0.957, 0.925, 0.847, 0.95)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.36, 0.25, 0.2, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="Style_button_hover"]
+content_margin_left = 34.0
+content_margin_top = 10.0
+content_margin_right = 34.0
+content_margin_bottom = 10.0
+bg_color = Color(1, 0.97, 0.9, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.545, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_title")
+
+[node name="Art" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_art")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Shade" type="TextureRect" parent="."]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 0.45
+texture = SubResource("Shade_top")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchor_left = 0.05
+anchor_top = 0.07
+anchor_right = 0.95
+anchor_bottom = 0.07
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 0.98, 0.93, 1)
+theme_override_colors/font_outline_color = Color(0.16, 0.1, 0.06, 0.85)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("Font_title")
+theme_override_font_sizes/font_size = 54
+text = "Harold Paddock: Word Mapper"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="."]
+layout_mode = 1
+anchor_left = 0.05
+anchor_top = 0.19
+anchor_right = 0.95
+anchor_bottom = 0.19
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(1, 0.96, 0.86, 1)
+theme_override_colors/font_outline_color = Color(0.16, 0.1, 0.06, 0.85)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = SubResource("Font_sub")
+theme_override_font_sizes/font_size = 20
+text = "Something's Fishy in Carbonear  ·  Episode 1: Carbonear, 1964"
+horizontal_alignment = 1
+
+[node name="BeginButton" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchor_left = 0.16
+anchor_top = 0.8
+anchor_right = 0.16
+anchor_bottom = 0.8
+offset_left = -90.0
+offset_top = -24.0
+offset_right = 90.0
+offset_bottom = 24.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.545, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0.27, 0, 1)
+theme_override_colors/font_focus_color = Color(0.545, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.27, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.27, 0, 1)
+theme_override_fonts/font = SubResource("Font_sub")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Style_button")
+theme_override_styles/hover = SubResource("Style_button_hover")
+theme_override_styles/pressed = SubResource("Style_button_hover")
+theme_override_styles/focus = SubResource("Style_button_hover")
+text = "Begin"
+
+[node name="Credit" type="Label" parent="."]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.96
+anchor_right = 0.5
+anchor_bottom = 0.96
+offset_left = -400.0
+offset_top = -12.0
+offset_right = 400.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(1, 0.97, 0.9, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.7)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "Linguistics 2210: Language in Newfoundland and Labrador  ·  Memorial University"
+horizontal_alignment = 1

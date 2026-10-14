@@ -1,0 +1,604 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="2_player"]
+[ext_resource type="PackedScene" path="res://scenes/npc.tscn" id="3_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialogue_ui.tscn" id="5_dialogue"]
+[ext_resource type="PackedScene" path="res://scenes/props/spruce.tscn" id="6_spruce"]
+[ext_resource type="Script" path="res://scripts/props/model_slot.gd" id="7_slot"]
+[ext_resource type="Script" path="res://scripts/props/dragonfly.gd" id="8_dragonfly"]
+[ext_resource type="PackedScene" path="res://scenes/ui/title_screen.tscn" id="9_title"]
+[ext_resource type="Shader" path="res://assets/shaders/ground.gdshader" id="10_ground"]
+[ext_resource type="Shader" path="res://assets/shaders/sea.gdshader" id="11_sea"]
+[ext_resource type="Script" path="res://scripts/props/scatter.gd" id="12_scatter"]
+[ext_resource type="Script" path="res://scripts/ui/screen_fade.gd" id="13_fade"]
+
+[sub_resource type="ProceduralSkyMaterial" id="SkyMat"]
+sky_top_color = Color(0.21, 0.42, 0.74, 1)
+sky_horizon_color = Color(0.74, 0.82, 0.87, 1)
+sky_curve = 0.17
+ground_bottom_color = Color(0.36, 0.41, 0.4, 1)
+ground_horizon_color = Color(0.74, 0.82, 0.87, 1)
+sun_angle_max = 14.0
+sun_curve = 0.07
+
+[sub_resource type="Sky" id="Sky"]
+sky_material = SubResource("SkyMat")
+
+[sub_resource type="Environment" id="Env"]
+background_mode = 2
+sky = SubResource("Sky")
+ambient_light_source = 3
+ambient_light_sky_contribution = 1.0
+ambient_light_energy = 1.1
+reflected_light_source = 2
+tonemap_mode = 3
+tonemap_white = 2.0
+ssao_enabled = true
+ssao_radius = 1.4
+ssao_intensity = 1.5
+ssao_power = 1.3
+ssao_light_affect = 0.15
+glow_enabled = true
+glow_intensity = 0.22
+glow_bloom = 0.04
+glow_blend_mode = 1
+glow_hdr_threshold = 1.1
+fog_enabled = true
+fog_light_color = Color(0.75, 0.82, 0.89, 1)
+fog_sun_scatter = 0.14
+fog_density = 0.0016
+fog_aerial_perspective = 0.5
+fog_sky_affect = 0.25
+adjustment_enabled = true
+adjustment_contrast = 1.06
+adjustment_saturation = 1.07
+
+[sub_resource type="ShaderMaterial" id="Mat_ground_shader"]
+shader = ExtResource("10_ground")
+
+[sub_resource type="ShaderMaterial" id="Mat_sea_shader"]
+shader = ExtResource("11_sea")
+
+[sub_resource type="PlaneMesh" id="SeaPlane"]
+size = Vector2(1200, 1200)
+
+[sub_resource type="PlaneMesh" id="GroundPlane"]
+size = Vector2(80, 80)
+subdivide_width = 40
+subdivide_depth = 40
+
+[sub_resource type="BoxShape3D" id="GroundShape"]
+size = Vector3(80, 1, 80)
+
+[sub_resource type="StandardMaterial3D" id="Mat_grass"]
+albedo_color = Color(0.36, 0.5, 0.26, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_water"]
+albedo_color = Color(0.13, 0.3, 0.42, 1)
+roughness = 0.15
+
+[sub_resource type="StandardMaterial3D" id="Mat_asphalt"]
+albedo_color = Color(0.22, 0.22, 0.23, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_gravel"]
+albedo_color = Color(0.58, 0.55, 0.5, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_wall"]
+albedo_color = Color(0.58, 0.17, 0.12, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_roof"]
+albedo_color = Color(0.2, 0.2, 0.22, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_trim"]
+albedo_color = Color(0.93, 0.92, 0.88, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_glass"]
+albedo_color = Color(0.15, 0.2, 0.25, 1)
+metallic = 0.3
+roughness = 0.1
+
+[sub_resource type="StandardMaterial3D" id="Mat_door"]
+albedo_color = Color(0.2, 0.32, 0.25, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_wood"]
+albedo_color = Color(0.5, 0.36, 0.22, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_soil"]
+albedo_color = Color(0.3, 0.2, 0.13, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_plant"]
+albedo_color = Color(0.25, 0.5, 0.2, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_flower_red"]
+albedo_color = Color(0.85, 0.15, 0.2, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_flower_yellow"]
+albedo_color = Color(0.95, 0.8, 0.2, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_sign"]
+albedo_color = Color(0.95, 0.95, 0.92, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_dragonfly"]
+albedo_color = Color(0.1, 0.55, 0.6, 1)
+metallic = 0.5
+roughness = 0.3
+
+[sub_resource type="StandardMaterial3D" id="Mat_wing"]
+transparency = 1
+albedo_color = Color(0.85, 0.95, 1, 0.45)
+
+[sub_resource type="BoxShape3D" id="Bound_x"]
+size = Vector3(80, 6, 1)
+
+[sub_resource type="BoxShape3D" id="Bound_z"]
+size = Vector3(1, 6, 80)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_main")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Env")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation = Vector3(-0.66, 0.82, 0)
+light_color = Color(1, 0.945, 0.85, 1)
+light_energy = 1.35
+light_angular_distance = 0.55
+shadow_enabled = true
+shadow_blur = 1.1
+shadow_normal_bias = 1.4
+directional_shadow_mode = 2
+directional_shadow_split_1 = 0.055
+directional_shadow_split_2 = 0.17
+directional_shadow_split_3 = 0.45
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 140.0
+
+[node name="Terrain" type="Node3D" parent="."]
+
+[node name="Ground" type="MeshInstance3D" parent="Terrain"]
+mesh = SubResource("GroundPlane")
+surface_material_override/0 = SubResource("Mat_ground_shader")
+
+[node name="GroundBody" type="StaticBody3D" parent="Terrain"]
+
+[node name="GroundShape" type="CollisionShape3D" parent="Terrain/GroundBody"]
+position = Vector3(0, -0.5, 0)
+shape = SubResource("GroundShape")
+
+[node name="Sea" type="MeshInstance3D" parent="Terrain"]
+position = Vector3(0, -0.42, 0)
+cast_shadow = 0
+mesh = SubResource("SeaPlane")
+surface_material_override/0 = SubResource("Mat_sea_shader")
+
+[node name="Highway" type="CSGBox3D" parent="Terrain"]
+position = Vector3(0, 0.02, 17)
+size = Vector3(80, 0.04, 5)
+material = SubResource("Mat_asphalt")
+
+[node name="Driveway" type="CSGBox3D" parent="Terrain"]
+position = Vector3(-6, 0.015, 8.5)
+size = Vector3(3, 0.03, 12)
+material = SubResource("Mat_gravel")
+
+[node name="Bounds" type="StaticBody3D" parent="Terrain"]
+
+[node name="North" type="CollisionShape3D" parent="Terrain/Bounds"]
+position = Vector3(0, 3, -40)
+shape = SubResource("Bound_x")
+
+[node name="South" type="CollisionShape3D" parent="Terrain/Bounds"]
+position = Vector3(0, 3, 40)
+shape = SubResource("Bound_x")
+
+[node name="East" type="CollisionShape3D" parent="Terrain/Bounds"]
+position = Vector3(40, 3, 0)
+shape = SubResource("Bound_z")
+
+[node name="West" type="CollisionShape3D" parent="Terrain/Bounds"]
+position = Vector3(-40, 3, 0)
+shape = SubResource("Bound_z")
+
+[node name="SaltboxHouse" type="Node3D" parent="."]
+script = ExtResource("7_slot")
+model_path = "res://assets/buildings/saltbox_house/model.glb"
+
+[node name="Shell" type="CSGCombiner3D" parent="SaltboxHouse"]
+use_collision = true
+
+[node name="Solid" type="CSGBox3D" parent="SaltboxHouse/Shell"]
+position = Vector3(0, 3.75, -0.5)
+size = Vector3(8, 7.5, 7)
+material = SubResource("Mat_wall")
+
+[node name="CutFrontRoof" type="CSGBox3D" parent="SaltboxHouse/Shell"]
+position = Vector3(0, 14.571, 8.071)
+rotation = Vector3(0.7854, 0, 0)
+operation = 2
+size = Vector3(20, 20, 20)
+material = SubResource("Mat_roof")
+
+[node name="CutRearRoof" type="CSGBox3D" parent="SaltboxHouse/Shell"]
+position = Vector3(0, 14.786, -5.849)
+rotation = Vector3(-0.7545, 0, 0)
+operation = 2
+size = Vector3(20, 20, 20)
+material = SubResource("Mat_roof")
+
+[node name="Chimney" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(0.6, 7.7, 0.8)
+size = Vector3(0.7, 1.6, 0.7)
+material = SubResource("Mat_trim")
+
+[node name="Door" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(0, 1.05, 3.03)
+size = Vector3(1, 2.1, 0.06)
+material = SubResource("Mat_door")
+
+[node name="WindowFrameL" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(-2.5, 1.55, 3.02)
+size = Vector3(1.2, 1.4, 0.04)
+material = SubResource("Mat_trim")
+
+[node name="WindowL" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(-2.5, 1.55, 3.05)
+size = Vector3(1, 1.2, 0.04)
+material = SubResource("Mat_glass")
+
+[node name="WindowFrameR" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(2.5, 1.55, 3.02)
+size = Vector3(1.2, 1.4, 0.04)
+material = SubResource("Mat_trim")
+
+[node name="WindowR" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(2.5, 1.55, 3.05)
+size = Vector3(1, 1.2, 0.04)
+material = SubResource("Mat_glass")
+
+[node name="UpperFrameL" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(-2.5, 4, 3.02)
+size = Vector3(1.2, 1.4, 0.04)
+material = SubResource("Mat_trim")
+
+[node name="UpperWindowL" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(-2.5, 4, 3.05)
+size = Vector3(1, 1.2, 0.04)
+material = SubResource("Mat_glass")
+
+[node name="UpperFrameM" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(0, 4, 3.02)
+size = Vector3(1.2, 1.4, 0.04)
+material = SubResource("Mat_trim")
+
+[node name="UpperWindowM" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(0, 4, 3.05)
+size = Vector3(1, 1.2, 0.04)
+material = SubResource("Mat_glass")
+
+[node name="UpperFrameR" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(2.5, 4, 3.02)
+size = Vector3(1.2, 1.4, 0.04)
+material = SubResource("Mat_trim")
+
+[node name="UpperWindowR" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(2.5, 4, 3.05)
+size = Vector3(1, 1.2, 0.04)
+material = SubResource("Mat_glass")
+
+[node name="WB_BoxL" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(-2.5, 0.75, 3.2)
+size = Vector3(1.3, 0.3, 0.35)
+material = SubResource("Mat_wood")
+
+[node name="WB_FlowerL1" type="CSGSphere3D" parent="SaltboxHouse"]
+position = Vector3(-2.9, 0.98, 3.2)
+radius = 0.12
+material = SubResource("Mat_flower_red")
+
+[node name="WB_FlowerL2" type="CSGSphere3D" parent="SaltboxHouse"]
+position = Vector3(-2.5, 0.98, 3.2)
+radius = 0.12
+material = SubResource("Mat_plant")
+
+[node name="WB_FlowerL3" type="CSGSphere3D" parent="SaltboxHouse"]
+position = Vector3(-2.1, 0.98, 3.2)
+radius = 0.12
+material = SubResource("Mat_flower_yellow")
+
+[node name="WB_BoxR" type="CSGBox3D" parent="SaltboxHouse"]
+position = Vector3(2.5, 0.75, 3.2)
+size = Vector3(1.3, 0.3, 0.35)
+material = SubResource("Mat_wood")
+
+[node name="WB_FlowerR1" type="CSGSphere3D" parent="SaltboxHouse"]
+position = Vector3(2.1, 0.98, 3.2)
+radius = 0.12
+material = SubResource("Mat_flower_yellow")
+
+[node name="WB_FlowerR2" type="CSGSphere3D" parent="SaltboxHouse"]
+position = Vector3(2.5, 0.98, 3.2)
+radius = 0.12
+material = SubResource("Mat_flower_red")
+
+[node name="WB_FlowerR3" type="CSGSphere3D" parent="SaltboxHouse"]
+position = Vector3(2.9, 0.98, 3.2)
+radius = 0.12
+material = SubResource("Mat_plant")
+
+[node name="PotatoPatch" type="Node3D" parent="."]
+position = Vector3(7.5, 0, 4)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/potato_patch/model.glb"
+
+[node name="Plot" type="CSGBox3D" parent="PotatoPatch"]
+position = Vector3(0, 0.06, 0)
+size = Vector3(4, 0.12, 5)
+use_collision = true
+material = SubResource("Mat_soil")
+
+[node name="Row1" type="CSGBox3D" parent="PotatoPatch"]
+position = Vector3(-1.2, 0.25, 0)
+size = Vector3(0.5, 0.3, 4.4)
+material = SubResource("Mat_plant")
+
+[node name="Row2" type="CSGBox3D" parent="PotatoPatch"]
+position = Vector3(0, 0.25, 0)
+size = Vector3(0.5, 0.3, 4.4)
+material = SubResource("Mat_plant")
+
+[node name="Row3" type="CSGBox3D" parent="PotatoPatch"]
+position = Vector3(1.2, 0.25, 0)
+size = Vector3(0.5, 0.3, 4.4)
+material = SubResource("Mat_plant")
+
+[node name="RouteSign" type="Node3D" parent="."]
+position = Vector3(-9.5, 0, 19.8)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/route_sign/model.glb"
+
+[node name="Post" type="CSGBox3D" parent="RouteSign"]
+position = Vector3(0, 1.1, -0.05)
+size = Vector3(0.12, 2.2, 0.08)
+material = SubResource("Mat_wood")
+
+[node name="Board" type="CSGBox3D" parent="RouteSign"]
+position = Vector3(0, 2.3, 0)
+size = Vector3(1.6, 1.1, 0.06)
+material = SubResource("Mat_sign")
+
+[node name="Text" type="Label3D" parent="RouteSign"]
+position = Vector3(0, 2.3, 0.04)
+pixel_size = 0.004
+modulate = Color(0.1, 0.1, 0.1, 1)
+outline_size = 0
+text = "ROUTE 70
+CARBONEAR"
+font_size = 72
+
+[node name="Bicycle" type="Node3D" parent="."]
+position = Vector3(-7.4, 0, 19.6)
+rotation = Vector3(0, 0.3, 0)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/bicycle/model.glb"
+add_collision = false
+
+[node name="WheelFront" type="CSGTorus3D" parent="Bicycle"]
+position = Vector3(0, 0.34, -0.52)
+rotation = Vector3(0, 0, 1.5708)
+inner_radius = 0.29
+outer_radius = 0.34
+sides = 16
+ring_sides = 6
+material = SubResource("Mat_asphalt")
+
+[node name="WheelRear" type="CSGTorus3D" parent="Bicycle"]
+position = Vector3(0, 0.34, 0.52)
+rotation = Vector3(0, 0, 1.5708)
+inner_radius = 0.29
+outer_radius = 0.34
+sides = 16
+ring_sides = 6
+material = SubResource("Mat_asphalt")
+
+[node name="Frame" type="CSGBox3D" parent="Bicycle"]
+position = Vector3(0, 0.62, 0)
+size = Vector3(0.04, 0.04, 0.95)
+material = SubResource("Mat_wall")
+
+[node name="SeatPost" type="CSGBox3D" parent="Bicycle"]
+position = Vector3(0, 0.75, 0.3)
+size = Vector3(0.04, 0.4, 0.04)
+material = SubResource("Mat_wall")
+
+[node name="Handlebar" type="CSGBox3D" parent="Bicycle"]
+position = Vector3(0, 0.9, -0.45)
+size = Vector3(0.42, 0.04, 0.04)
+material = SubResource("Mat_roof")
+
+[node name="Grass" type="MultiMeshInstance3D" parent="."]
+cast_shadow = 0
+script = ExtResource("12_scatter")
+source_model = "res://assets/props/grass_tuft/model.glb"
+count = 6000
+area = Vector2(37, 37)
+scale_range = Vector2(0.8, 2.1)
+random_seed = 3
+tilt_degrees = 9.0
+
+[node name="Rocks" type="MultiMeshInstance3D" parent="."]
+script = ExtResource("12_scatter")
+source_model = "res://assets/props/beach_rock/model.glb"
+count = 52
+area = Vector2(37, 37)
+scale_range = Vector2(0.45, 1.25)
+inner_radius = 15.0
+random_seed = 9
+tilt_degrees = 10.0
+
+[node name="Trees" type="Node3D" parent="."]
+
+[node name="Spruce1" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(-12, 0, -8)
+
+[node name="Spruce2" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(-15, 0, -2)
+
+[node name="Spruce3" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(10, 0, -10)
+
+[node name="Spruce4" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(14, 0, -4)
+
+[node name="Spruce5" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(-9, 0, -14)
+
+[node name="Spruce6" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(4, 0, -15)
+
+[node name="Spruce7" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(18, 0, 6)
+
+[node name="Dragonfly" type="Node3D" parent="."]
+position = Vector3(7.5, 1.6, 9)
+scale = Vector3(3, 3, 3)
+script = ExtResource("8_dragonfly")
+model_path = "res://assets/props/dragonfly/model.glb"
+yaw_degrees = 180.0
+add_collision = false
+
+[node name="Body" type="CSGCylinder3D" parent="Dragonfly"]
+rotation = Vector3(1.5708, 0, 0)
+radius = 0.012
+height = 0.14
+sides = 6
+material = SubResource("Mat_dragonfly")
+
+[node name="WingFL" type="CSGBox3D" parent="Dragonfly"]
+position = Vector3(0.05, 0.01, -0.03)
+size = Vector3(0.09, 0.002, 0.022)
+material = SubResource("Mat_wing")
+
+[node name="WingFR" type="CSGBox3D" parent="Dragonfly"]
+position = Vector3(-0.05, 0.01, -0.03)
+size = Vector3(0.09, 0.002, 0.022)
+material = SubResource("Mat_wing")
+
+[node name="WingBL" type="CSGBox3D" parent="Dragonfly"]
+position = Vector3(0.05, 0.01, 0.0)
+size = Vector3(0.085, 0.002, 0.02)
+material = SubResource("Mat_wing")
+
+[node name="WingBR" type="CSGBox3D" parent="Dragonfly"]
+position = Vector3(-0.05, 0.01, 0.0)
+size = Vector3(0.085, 0.002, 0.02)
+material = SubResource("Mat_wing")
+
+
+[node name="Spruce8" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(-18, 0, 4)
+rotation = Vector3(0, 0.0, 0)
+
+[node name="Spruce9" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(-14, 0, -12)
+rotation = Vector3(0, 1.3, 0)
+
+[node name="Spruce10" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(20, 0, -8)
+rotation = Vector3(0, 2.6, 0)
+
+[node name="Spruce11" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(16, 0, 12)
+rotation = Vector3(0, 3.9, 0)
+
+[node name="Spruce12" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(-22, 0, -6)
+rotation = Vector3(0, 5.2, 0)
+
+[node name="Spruce13" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(2, 0, -20)
+rotation = Vector3(0, 0.22, 0)
+
+[node name="Spruce14" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(24, 0, 2)
+rotation = Vector3(0, 1.52, 0)
+
+[node name="Spruce15" parent="Trees" instance=ExtResource("6_spruce")]
+position = Vector3(-6, 0, -18)
+rotation = Vector3(0, 2.82, 0)
+
+[node name="Fence" type="Node3D" parent="."]
+
+[node name="Section1" type="Node3D" parent="Fence"]
+position = Vector3(-11.1, 0, 13.6)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/picket_fence/model.glb"
+
+[node name="Section2" type="Node3D" parent="Fence"]
+position = Vector3(-8.7, 0, 13.6)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/picket_fence/model.glb"
+
+[node name="Section3" type="Node3D" parent="Fence"]
+position = Vector3(-3.3, 0, 13.6)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/picket_fence/model.glb"
+
+[node name="Section4" type="Node3D" parent="Fence"]
+position = Vector3(-0.9, 0, 13.6)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/picket_fence/model.glb"
+
+[node name="Section5" type="Node3D" parent="Fence"]
+position = Vector3(1.5, 0, 13.6)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/picket_fence/model.glb"
+
+[node name="Section6" type="Node3D" parent="Fence"]
+position = Vector3(3.9, 0, 13.6)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/picket_fence/model.glb"
+
+[node name="Section7" type="Node3D" parent="Fence"]
+position = Vector3(6.3, 0, 13.6)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/picket_fence/model.glb"
+
+[node name="Section8" type="Node3D" parent="Fence"]
+position = Vector3(8.7, 0, 13.6)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/picket_fence/model.glb"
+
+[node name="Section9" type="Node3D" parent="Fence"]
+position = Vector3(11.1, 0, 13.6)
+script = ExtResource("7_slot")
+model_path = "res://assets/props/picket_fence/model.glb"
+
+[node name="GardenMan" parent="." instance=ExtResource("3_npc")]
+position = Vector3(6.1, 0, 8.1)
+rotation = Vector3(0, -0.5, 0)
+idle_animation = "hoeing"
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector3(-6, 0.1, 20.5)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UI" instance=ExtResource("4_hud")]
+
+[node name="DialogueUI" parent="UI" instance=ExtResource("5_dialogue")]
+
+[node name="TitleScreen" parent="UI" instance=ExtResource("9_title")]
+
+[node name="ScreenFade" type="ColorRect" parent="UI" groups=["screen_fade"]]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.04, 0.03, 0.02, 1)
+script = ExtResource("13_fade")

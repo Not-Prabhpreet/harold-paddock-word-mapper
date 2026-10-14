@@ -1,0 +1,197 @@
+[
+  {
+    "passage": "Carbonear 02",
+    "id": "carbonear_02_1f5d5b07",
+    "speaker": "man",
+    "text": "'ow's she gon', by"
+  },
+  {
+    "passage": "Carbonear 03",
+    "id": "carbonear_03_44b41acf",
+    "speaker": "man",
+    "text": "No matter. We loves ya just the same no matter where you're at."
+  },
+  {
+    "passage": "Ask a question from Harold's dialect survey",
+    "id": "ask_a_question_from_harold_s_dialect_sur_f8206d64",
+    "speaker": "harold",
+    "text": "I'll let you get back to work but I just wanted to ask a question."
+  },
+  {
+    "passage": "Ask a question from Harold's dialect survey",
+    "id": "ask_a_question_from_harold_s_dialect_sur_ceb5c234",
+    "speaker": "man",
+    "text": "Go on 'den"
+  },
+  {
+    "passage": "Ask a question from Harold's dialect survey",
+    "id": "ask_a_question_from_harold_s_dialect_sur_3ceccbd0",
+    "speaker": "harold",
+    "text": "Well, I'm a graduate student at MUN conducting field work."
+  },
+  {
+    "passage": "Ask a question from Harold's dialect survey",
+    "id": "ask_a_question_from_harold_s_dialect_sur_1731ee47",
+    "speaker": "man",
+    "text": "Field work? You gonna help me grow me potatos?",
+    "tts_text": "[chuckles] Field work? You gonna help me grow me potatoes?"
+  },
+  {
+    "passage": "Ask a question from Harold's dialect survey",
+    "id": "ask_a_question_from_harold_s_dialect_sur_a86ac5af",
+    "speaker": "harold",
+    "text": "No, I'm actually researching Newfoundland dialects!"
+  },
+  {
+    "passage": "Ask a question from Harold's dialect survey",
+    "id": "ask_a_question_from_harold_s_dialect_sur_a75478e2",
+    "speaker": "man",
+    "text": "By da jeezuz. Ya won't find any dialects 'ere!",
+    "tts_text": "[laughing] By da jeezuz. Ya won't find any dialects 'ere!"
+  },
+  {
+    "passage": "Talk about the weather a bit",
+    "id": "talk_about_the_weather_a_bit_bf2a2233",
+    "speaker": "harold",
+    "text": "Some hot today."
+  },
+  {
+    "passage": "Talk about the weather a bit",
+    "id": "talk_about_the_weather_a_bit_a2d76aaa",
+    "speaker": "man",
+    "text": "It's got me drove, young man. I likes me rain, drizzle and fog, I does. With the heat, the bugs are all out. Oh, like that one 'dere."
+  },
+  {
+    "passage": "DragonflyVariant",
+    "id": "dragonflyvariant_802b3ef9",
+    "speaker": "man",
+    "text": "'Dat's a 'ORSE-STINGER. Everyone 'round 'ere knows 'dat"
+  },
+  {
+    "passage": "DragonflyVariant",
+    "id": "dragonflyvariant_c0f7a5dd",
+    "speaker": "harold",
+    "text": "Oh yes \"'ORSE-STINGER\". I've heard them called that before",
+    "tts_text": "[feigning familiarity] Oh yes, 'orse-stinger. I've heard them called that before."
+  },
+  {
+    "passage": "DragonflyVariant",
+    "id": "dragonflyvariant_bcc3a4ca",
+    "speaker": "harold",
+    "text": "Well thanks for your time and may your potatoes grow big and healthy."
+  },
+  {
+    "passage": "Carbonear End",
+    "id": "carbonear_end_0c106900",
+    "speaker": "harold",
+    "text": "Shoot. I'll need to be more diligent next time."
+  },
+  {
+    "passage": "Poem",
+    "id": "poem_7d101c0f",
+    "speaker": "harold",
+    "text": "Ahem",
+    "tts_text": "[clears throat] Ahem."
+  },
+  {
+    "passage": "Poem",
+    "id": "poem_be83d37b",
+    "speaker": "harold",
+    "text": "And I John Alone on an island See a New Land Where all is alive and one, Where the stone given in lieu of a loaf Becomes bread, Where the roses grown in lieu of a life Become fish, Which leap for joy From streams of veinless blood In the dusk Become dawn."
+  },
+  {
+    "passage": "Poem",
+    "id": "poem_622f3742",
+    "speaker": "harold",
+    "text": "Some poetic, luh!"
+  },
+  {
+    "passage": "Poem",
+    "id": "poem_98f4370f",
+    "speaker": "harold",
+    "text": "It's all me. I wrote that."
+  },
+  {
+    "passage": "in the local accent",
+    "id": "in_the_local_accent_bf2df695",
+    "speaker": "harold_local",
+    "text": "Not too bad, b'y. Some hot, wha?",
+    "draft": true
+  },
+  {
+    "passage": "in his Long Branch vernacular",
+    "id": "in_his_long_branch_vernacular_947c36a1",
+    "speaker": "harold",
+    "text": "Not too bad at all, sir. How's yourself?",
+    "draft": true
+  },
+  {
+    "passage": "in a St. John's standard accent",
+    "id": "in_a_st_john_s_standard_accent_2b43345e",
+    "speaker": "harold_townie",
+    "text": "I'm doing quite well, thank you. And how are you?",
+    "draft": true
+  },
+  {
+    "passage": "Reply",
+    "id": "reply_5cc46d5e",
+    "speaker": "man",
+    "text": "You tryin' to sell me some encyclopedias?"
+  },
+  {
+    "passage": "Reply",
+    "id": "reply_ee01e137",
+    "speaker": "man",
+    "text": "Ah a young fella from down Long Branch!"
+  },
+  {
+    "passage": "Reply",
+    "id": "reply_7dc42e01",
+    "speaker": "harold",
+    "text": "Yes, that's right!",
+    "tts_text": "[chuckles] Yes, that's right!"
+  },
+  {
+    "passage": "Reply",
+    "id": "reply_b937d462",
+    "speaker": "man",
+    "text": "Ye sounds like yer a townie, by!",
+    "tts_text": "[derisive] Ye sounds like yer a townie, by!"
+  },
+  {
+    "passage": "Reply",
+    "id": "reply_b63b3321",
+    "speaker": "harold",
+    "text": "Well, originally from Long Branch"
+  },
+  {
+    "passage": "Reply",
+    "id": "reply_8586f65a",
+    "speaker": "man",
+    "text": "Is 'dat right!"
+  },
+  {
+    "passage": "Question",
+    "id": "question_df23e354",
+    "speaker": "harold",
+    "text": "OK, here's the question: What do you call those big flying insects with two pairs of wings that catches smaller insects, especially around ponds and marshes?"
+  },
+  {
+    "passage": "Question",
+    "id": "question_f56f5068",
+    "speaker": "harold",
+    "text": "Speak of the devil! What do you call that one?"
+  },
+  {
+    "passage": "Question",
+    "id": "question_c07681f0",
+    "speaker": "man",
+    "text": "'dat one? You kiddin' me?"
+  },
+  {
+    "passage": "Question",
+    "id": "question_d0a7e1e3",
+    "speaker": "harold",
+    "text": "Oh, look at that. What do you call that one?"
+  }
+]

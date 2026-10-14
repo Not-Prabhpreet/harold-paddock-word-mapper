@@ -1,0 +1,102 @@
+{
+  "_comment": "How the 3D game stages the Twine passages. Edit this, not code, when passages are added. page_passages: shown as a full journal page instead of the conversation bar. world_passages: choosing these from a page closes it and drops the player into the 3D world (the conversation starts when they walk up to the NPC). final_passages: end of episode, offer Play again. events: things that happen in the 3D scene when a passage is shown. images: Twine image URLs -> bundled files. reveal_notes: citations appended to an inline footnote when it is opened. portraits: speaker -> expression -> image (speakers like harold_local use 'harold'). expressions: passage -> speaker -> expression (default 'neutral'). page_texture: paper behind page passages. backdrops: passage -> first matching {if: {var: value}, image} is shown full-screen behind the page. speaker_names: caption under each portrait.",
+  "page_passages": [
+    "Start",
+    "Field Journal",
+    "Poem",
+    "What is linguistics",
+    "Credits",
+    "Carbonear End"
+  ],
+  "world_passages": [
+    "Carbonear 02"
+  ],
+  "final_passages": [
+    "Credits"
+  ],
+  "events": {
+    "Question": "dragonfly_flyby",
+    "Talk about the weather a bit": "dragonfly_flyby"
+  },
+  "images": {
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NL_Route_70.svg/240px-NL_Route_70.svg.png": {
+      "path": "res://assets/images/route70.svg",
+      "width": 150
+    },
+    "https://live.staticflickr.com/6066/6047918411_38be685b36_w.jpg": {
+      "path": "res://assets/images/dragonfly.jpg",
+      "width": 400
+    },
+    "https://collections.mun.ca/digital/api/singleitem/image/sjcarew/834/default.jpg": {
+      "path": "res://assets/images/owlish_mun_archive.jpg",
+      "width": 300
+    }
+  },
+  "reveal_notes": {
+    "owlish": "“an owlish interrogator” (Paddock, 1966, p. 6)"
+  },
+  "portraits": {
+    "man": {
+      "neutral": "res://assets/ui/portraits/man_neutral.png",
+      "laughing": "res://assets/ui/portraits/man_laughing.png"
+    },
+    "harold": {
+      "neutral": "res://assets/ui/portraits/harold_neutral.png",
+      "sheepish": "res://assets/ui/portraits/harold_sheepish.png"
+    }
+  },
+  "expressions": {
+    "Ask a question from Harold's dialect survey": {
+      "man": "laughing"
+    },
+    "DragonflyVariant": {
+      "man": "laughing"
+    },
+    "Carbonear End": {
+      "harold": "sheepish"
+    }
+  },
+  "page_texture": "res://assets/ui/journal_page.png",
+  "backdrops": {
+    "Start": [
+      {
+        "image": "res://assets/ui/title.png"
+      }
+    ],
+    "What is linguistics": [
+      {
+        "image": "res://assets/ui/title.png"
+      }
+    ],
+    "Field Journal": [
+      {
+        "if": {
+          "question": true,
+          "lexicon": true
+        },
+        "image": "res://assets/ui/ending.png"
+      },
+      {
+        "if": {
+          "question": true
+        },
+        "image": "res://assets/ui/title.png"
+      }
+    ],
+    "Credits": [
+      {
+        "if": {
+          "lexicon": true
+        },
+        "image": "res://assets/ui/ending.png"
+      },
+      {
+        "image": "res://assets/ui/title.png"
+      }
+    ]
+  },
+  "speaker_names": {
+    "man": "The man in the garden",
+    "harold": "Harold Paddock"
+  }
+}

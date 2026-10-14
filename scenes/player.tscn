@@ -1,0 +1,102 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
+[ext_resource type="Script" path="res://scripts/characters/character_model.gd" id="2_model"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_body"]
+radius = 0.35
+height = 1.8
+
+[sub_resource type="StandardMaterial3D" id="Mat_shirt"]
+albedo_color = Color(0.95, 0.95, 0.93, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_shorts"]
+albedo_color = Color(0.13, 0.18, 0.36, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_skin"]
+albedo_color = Color(0.9, 0.74, 0.62, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_hair"]
+albedo_color = Color(0.2, 0.14, 0.1, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_glasses"]
+albedo_color = Color(0.05, 0.05, 0.05, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_sneakers"]
+albedo_color = Color(0.92, 0.9, 0.85, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_journal"]
+albedo_color = Color(0.93, 0.89, 0.78, 1)
+
+[node name="Player" type="CharacterBody3D" groups=["player"]]
+script = ExtResource("1_player")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.9, 0)
+shape = SubResource("CapsuleShape3D_body")
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="Legs" type="CSGCylinder3D" parent="Visual"]
+position = Vector3(0, 0.38, 0)
+radius = 0.17
+height = 0.62
+material = SubResource("Mat_skin")
+
+[node name="Sneakers" type="CSGBox3D" parent="Visual"]
+position = Vector3(0, 0.05, -0.04)
+size = Vector3(0.36, 0.1, 0.4)
+material = SubResource("Mat_sneakers")
+
+[node name="Shorts" type="CSGCylinder3D" parent="Visual"]
+position = Vector3(0, 0.78, 0)
+radius = 0.23
+height = 0.26
+material = SubResource("Mat_shorts")
+
+[node name="Shirt" type="CSGCylinder3D" parent="Visual"]
+position = Vector3(0, 1.17, 0)
+radius = 0.24
+height = 0.56
+material = SubResource("Mat_shirt")
+
+[node name="Head" type="CSGSphere3D" parent="Visual"]
+position = Vector3(0, 1.62, 0)
+radius = 0.17
+radial_segments = 16
+rings = 8
+material = SubResource("Mat_skin")
+
+[node name="Hair" type="CSGSphere3D" parent="Visual"]
+position = Vector3(0, 1.69, 0.02)
+radius = 0.165
+radial_segments = 16
+rings = 8
+material = SubResource("Mat_hair")
+
+[node name="Glasses" type="CSGBox3D" parent="Visual"]
+position = Vector3(0, 1.64, -0.16)
+size = Vector3(0.28, 0.07, 0.03)
+material = SubResource("Mat_glasses")
+
+[node name="Journal" type="CSGBox3D" parent="Visual"]
+position = Vector3(0.27, 1.05, -0.06)
+size = Vector3(0.04, 0.22, 0.16)
+material = SubResource("Mat_journal")
+
+[node name="CharacterModel" type="Node3D" parent="Visual"]
+script = ExtResource("2_model")
+asset_dir = "res://assets/characters/harold"
+
+[node name="CameraPivot" type="Node3D" parent="."]
+position = Vector3(0, 1.55, 0)
+rotation = Vector3(-0.25, 0, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot"]
+position = Vector3(0.45, 0, 0)
+spring_length = 4.0
+margin = 0.2
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D"]
+current = true
+fov = 65.0

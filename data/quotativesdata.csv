@@ -1,0 +1,277 @@
+NPC Gender,NPC Age,NPC Region,NPC Ethnicity,"Quotative
+Construction",Quoted Phrase Cleaned up,Verb Recoded,NPC use NLE?,NLE Features,NPC Voice Change,Quotee Type,Setting,Setting Formality
+Female,18,Middle Cove,White NLer,She was like,I don't needs a bag,be like,Yes,verbal -s on needs,Yes,customer,workplace,2
+Female,13,Middle Cove,White NLer,He texted me like,Wanna get some lunch?,be like,No,N/A,No,other,text_or_chat,4
+Female,17,St. John's,Asian (unspecified),The kids were all,aaah! aaaah!,be like,No,N/A,No,student,school_building,3
+Female,89,Placentia,White NLer,"The lady, she said","Happy birthday, Betty",say,No,N/A,No,other,church,1
+Female,20,International,White (non-NL),Uncle Jim said,Go talk to Grammie,say,No,N/A,No,father,friend_or_family_home,3
+Female,23,International,Mixed,The guy at the cash said to me,That'll be 35 dollars,say,No,N/A,No,service_worker,retail_or_service,2
+Female,52,St. Mary's Bay,White NLer,She was all,"I'm not
+dealing with
+all that
+nonsense
+today",be like,Yes,"Lexical item
+""nonsense""",Yes,mother,home,3
+Female,70,Fogo Island,White NLer,"She looks over
+and goes","He never
+called the
+numbers right
+last week",go,Yes,"Verbal -s on
+""goes""",Yes,other,event_or_venue,1
+Female,26,St. John's,White NLer,she said,"we'll get out
+friday",say,Yes,"colloquial NL
+use of ""get
+out"" meaning
+to go out and
+socialize",Yes,friend,phone_call,4
+Female,20,St. John's,Unknown,"She looks at
+the sweater
+and says","That's too
+expensive",say,No,None,Yes,customer,retail_or_service,2
+Female,26,St. John's,White NLer,I was like,"maybe we
+could go",be like,No,None,Yes,self,friend_or_family_home,3
+Female,61,Bishop’s Cove,White NLer,I says,that's it,say,Yes,-s on says,Yes,mother,home,3
+Female,45,Harricott,White NLer,She walked into Tims and goes,where's me coffee,go,Yes,"""me"" instead of ""my""",Yes,stranger,staff_room_or_break_room,2
+Female,25,Paradise,White NLer,He said,where are you off to,say,Yes,off to to ask where someone is going,Yes,coworker,school_building,3
+Female,38,Ferryland,White NLer,She said,like what's up with the storm,say,Yes,"what's up, the weather",Yes,service_worker,school_building,3
+Female,91,Trepassey,White NLer,She tells me,you're not going shopping today,tell,Yes,-s at the end of tells,Yes,other,home,3
+Female,27,CBS,Inuit,"""I was just saying""",about my bruise!,say,No,n/a,No,friend,workplace,2
+Female,51,CBS,White NLer,"""Pop used to say""",University students were the best,say,No,n/a,No,mother,home,3
+Female,23,CBS,White NLer,"""And so I was like""","Get out, then! We don't want ya.",be like,Yes,"""ya"" in place of ""you""",Yes,friend,workplace,2
+Female,30,International,White (non-NL),"""They were all like""",What's your GPA?,be like,No,None,No,group,school_building,3
+Female,55,St. John's,White NLer,"""She said""",I like your coat,say,No,None,Yes,friend,street_or_sidewalk,3
+Female,27,Grand Bank,White NLer,"""He looks at me and goes""",Ya don't look very busy,go,Yes,"""ya"" instead of ""you""",Yes,coworker,workplace,2
+Female,30,St. John's,White NLer,"""She was like""",He's a boy,be like,No,None,No,customer,workplace,2
+Female,20,Placentia,White NLer,"""I think she said""",You only need to pick one topic,say,No,None,Yes,professor,other,x
+Female,22,St. John's,White NLer,He was like,well I needs to get it off my chest,be like,Yes,verbal -s on needs,Yes,romantic_partner,home,3
+Female,88,Bay de Verde,White NLer,The nurse was in and said,"you're not after going out, are you?",say,Yes,"use of ""after"" for past action",No,mother,home,3
+Female,48,Portugal Cove–St. Philip’s,White NLer,And she goes,"oh, what a state!",go,Yes,"use of ""state"" to refer to a mess",Yes,coworker,workplace,2
+Female,40,St. John's,White NLer,He says,"well, I agree you're stunned",say,Yes,"use of ""stunned"" to imply stupidity",Yes,other_family,other,x
+Female,21,St. John's,White NLer,She was like,Ye should go,be like,Yes,Ye,Unknown,friend,home,3
+Female,21,Portugal Cove–St. Philip’s,White NLer,She goes,"Why are so many people going"" None noted",go,Unknown,,Unknown,friend,car,3
+Female,59,St. John's,White NLer,She stopped and was like,What?,be like,No,None noted,Unknown,customer,workplace,2
+Female,53,Torbay,White NLer,He goes,It's some cold out,go,Yes,Some,Unknown,father,home,3
+Female,22,Paradise,White NLer,She's like,you most certainly are then,be like,No,"sentence final - ""then""",Yes,mother,home,3
+Female,18,CBS,White NLer,he went,you're not driving in this weather,go,Yes,"dropped g at the end of ""driving""",Yes,father,home,3
+Female,50,Paradise,White NLer,dad said,well alright bhy,say,Yes,"use of ""bhy""",Yes,father,home,3
+Female,54,CBS,White NLer,she goes,you got any quality street?,go,Yes,"""missus""",Yes,customer,workplace,2
+Female,24,CBS,White NLer,she was like,"I can't friggen stand this, what time does DIL bus come through Gander?",be like,Yes,reference to DIL bus,Yes,mother,workplace,2
+Female,80,CBS,White NLer,I said,Sweet as a chicken!,say,Yes,"""sweet as a chicken""",Yes,mother,phone_call,4
+Female,20,CBS,White NLer,He was getting on saying,you're yellin at me,say,Yes,no -g on yelling,Yes,romantic_partner,car,3
+Female,49,Mitchells Brook,White NLer,He goes,"any discounts, and im sittin there looking at him",go,Yes,no -g on looking,Yes,service_worker,retail_or_service,2
+Female,16,CBS,White NLer,He was going on saying,I'm always on my phone,say,No,N/A,No,romantic_partner,car,3
+Female,18,Paradise,White NLer,He was all,look at me,be like,No,N/A,No,student,workplace,2
+Female,30,CBS,White NLer,She was saying,it's been tough goin,say,Yes,no -g on going,Yes,other,workplace,2
+Female,21,Lawn,White NLer,And my friend was like,I don't think I can do this,be like,No,"No, besides having a Newfie accent in regular speaking voice",No,friend,outdoor_public_space,3
+Female,28,Triton,White NLer,And she was like,They're going to kick me out of the program,be like,No,"No, besides having a Newfie accent in regular speaking voice",No,friend,school_building,3
+Female,22,Pouch Cove,White NLer,And she goes,I have to tell her this now,go,No,"No, besides having a bit of Newfie accent in regular speaking voice",No,romantic_partner,party_or_gathering,3
+Female,54,Gander,White NLer,And she goes,He's not your brother!,go,No,"No, besides having a little bit of a Newfie accent when speaking",No,other,retail_or_service,2
+Female,21,Paradise,White NLer,She said,It has to be at least 2 pages,say,No,"No, besides having a little bit of a Newfie accent when speaking",No,professor,classroom,1
+Female,18,Gander,White NLer,She says,You can come as well,say,No,"No, besides having a little bit of a Newfie accent when speaking",No,friend,home,3
+Female,20,St. John's,White NLer,Y'know what he said to me earlier? He said,The ocean is a stew,say,No,No,No,romantic_partner,other,x
+Female,19,Corner Brook,White NLer,She said,They aren't sure when it will be fixed,say,No,"No, besides having a little bit of a Newfie accent when speaking",No,other,school_hallway,3
+Female,23,St. John's,White NLer,She looked over and was like,This is crazy,be like,No,No,No,other,retail_or_service,2
+Female,60,Mount Pearl,White NLer,She looked at him and said,Help him sort will ya,say,Yes,Verbal a on you,Yes,other,store_checkout,2
+Female,19,Trinity Bay,White NLer,She looked at her friend and said,What are ya at,other,Yes,"ya instead of you, at instead of doing",Yes,friend,other,x
+Female,23,Trinity Bay,White NLer,she was talking to me saying it cold enough to,freeze da arse off ya today,other,Yes,arse instead of but,Yes,sibling,classroom,1
+Female,71,Trinity Bay,White NLer,She was telling her friend dat,da wind is up a livin gale,tell,Yes,living gale instead of blowing hard,Yes,mother,phone_call,4
+Female,48,Trinity Bay,White NLer,she was sat at the table talking about the cat,she's like somting starved to det,other,Yes,det instead of death,Yes,mother,other,x
+Female,64,Trinity Bay,White NLer,she told her husband,i'm some sick of dis fricking snow,tell,Yes,dis instead of this,Yes,other_family,home,3
+Female,50,Burin Peninsula,White NLer,She turns to me and says,G'wan b'y,say,Yes,"Use of ""b'y"" and reduced pronunciation in ""go on""",Yes,mother,home,3
+Female,19,St. John's,White NLer,At the end of class he tells us,Get er done before next class,tell,Yes,"Shortened form of ""it,"" sometimes referred to ""her""",Yes,other,classroom,1
+Female,20,Ontario,White (non-NL),Then she added,Yes me ducky,other,Yes,"""Me"" instead of ""my,"" ""local"" address term of ""ducky""",Unknown,service_worker,campus_common_space,3
+Female,19,Deer Lake,White NLer,After that I said,Dats wicket sure,say,No,"Replacement of the ""th"" consonant",Yes,classmate,party_or_gathering,3
+Female,35,Atlantic Canada (non-NL),Black,He high fived me and went,Good on ya,go,Yes,"Reduced pronoun, ""ya"" rather than ""you""",Yes,coworker,workplace,2
+Female,16,Burin Peninsula,White NLer,I fell and he goes,Watch yerself dear,go,Yes,"Local term address of ""dear,"" and vowel redeuction in ""yerself""",Yes,teacher,school_building,3
+Female,19,Marystown,White NLer,We're calling and he goes,I got da whole day off,go,Yes,"da said instead of ""the""",Yes,father,video_call,4
+Female,55,Marystown,White NLer,I says to him all the time,Don't ya forget your keys!,say,Yes,"verbal -s on says, ""ya"" instead of ""your""",Yes,father,video_call,4
+Female,18,St. John's,White NLer,I told him to be on time and he went,"I'm not always late, b'y!",go,Yes,b'y used,Yes,romantic_partner,other,x
+Female,19,Bay Roberts,White NLer,We were chattn' and she was all,I loves capelin time!,be like,Yes,verbal -s on loves,Yes,friend,other,x
+Female,20,St. John's,White NLer,She said how she got a good mark back and went,I'm right happy with meself,go,Yes,right (in this context) used as well as meself,Yes,friend,other,x
+Female,19,St. John's,White NLer,We were about to leave and she was like,I gotta get me jacket,be like,Yes,"me said instead of ""my""",Yes,sibling,other,x
+Female,20,Other,White NLer,He was like,"Sophie, you shouldn't leave your shoes here",be like,No,N/A,No,boss,workplace,2
+Female,19,Other,White NLer,She was like,You don't gotta do 'em if the staff are good,be like,Yes,"got to' truned into ""gotta""; removal of 'th' for 'them' (""'em"")",Yes,boss,workplace,2
+Female,40,Unknown,White NLer,I think she said,You're gonna use two markers,say,No,"Sort of NLE: 'going to' turned into ""gonna""",Yes,boss,workplace,2
+Female,21,Harbour Grace,White NLer,She was like,Tell her to grab the railing and hoist herself up,be like,No,N/A,No,boss,school_building,3
+Female,20,Other,White NLer,He grabs it from me and goes,Last I checked I'm management,go,No,N/A,No,boss,workplace,2
+Female,21,Labrador City,White (non-NL),I was like,Please stop patting my head,be like,No,N/A,No,self,other,x
+Female,21,St. John's,White NLer,He looks at me and he's like,"You hate me, don't ever speak to me again",be like,No,N/A,No,student,school_building,3
+Female,20,St. John's,White NLer,And then she goes,Well I didn't know that by,go,Yes,By used to create emphasis,Yes,romantic_partner,phone_call,4
+Female,20,St. John's,White NLer,Then I was like,Yes me ducky,be like,Yes,"Me ducky, a NL way to refer to someone",Yes,self,restaurant_or_cafe,3
+Female,19,St. John's,White NLer,She was like,We're going on a boat tomorrow,be like,No,N/A,No,coworker,workplace,2
+Female,19,St. John's,White NLer,She goes,You've got the fluffiest cat,go,No,N/A,No,friend,home,3
+Female,50,CBS,White NLer,They said,"We went last week, it was great",say,No,N/A,No,friend,workplace,2
+Female,50,Atlantic Canada (non-NL),White (non-NL),He said,It's going great,say,No,N/A,No,other,phone_call,4
+Female,30,International,South Asian,He said,I've liked her since she started working here,say,No,N/A,No,coworker,party_or_gathering,3
+Female,19,Mount Pearl,White NLer,And then she goes,Well I didn't think you'd wanna go,go,No,N/A,No,friend,phone_call,4
+Female,20,St. John's,White NLer,"No actually, because I was like",No bhy,be like,Yes,"""Bhy""- popular Newfoundland dialect",Yes,stranger,library,1
+Female,18,Conception Bay South,White NLer,So I said,How'm I s'posed to know that?,say,Yes,"Abreviation (How'm - how am), ""s'possed"" - no verbal U",Yes,friend,friend_or_family_home,3
+Female,19,Paradise,Black,"Bro, he said",I got no idea where the perfume's at BHY,say,Yes,"""Bhy"" popular Newfoundland dialect",Yes,customer,friend_or_family_home,3
+Female,64,Portugal Cove–St. Philip’s,White NLer,He comes up and he was like,Who knit you,be like,Yes,"""who knit you"" popular Newfoundland dialect",Yes,grandparent,home,3
+Female,33,St. John's,White NLer,She looks at me and ask,what are you at with dat,ask,Yes,Th-stopping (dat),Yes,other_family,home,3
+Female,17,Trinity Bay,Indigenous (non-Inuit),She looks at me and answers,"he might be by later on, see how he felt",ask,Yes,"""by later on"" informal",Yes,friend,car,3
+Female,80,St. John's,White NLer,Looks at cards and said,nothing to write home about here,say,Unknown,,No,mother,car,3
+Female,53,Trinity Bay,White NLer,Grabs picture and goes,see what I bought eh,go,Yes,"""eh""",Yes,friend,home,3
+Female,73,Trinity Bay,White NLer,Rubbed her fingers together and goes,I likes the creamy icing at the coop,go,Yes,"""I likes"" verbal -s on likes",Yes,mother,home,3
+Female,13,St. John's,White NLer,[she] was like,maybe she means the canteen,be like,No,None,No,friend,home,3
+Female,47,St. John's,White NLer,she was like,they usually call at 3:00,be like,No,None,Unknown,friend,car,3
+Female,19,St. John's,White NLer,he said,people were really nice,say,No,None,No,father,other,x
+Female,82,St. John's,White (non-NL),he laughed and he said,It's rabbit,say,No,None,Unknown,father,home,3
+Female,44,St. John's,White NLer,she was like,sure that's not high,be like,Yes,using 'sure',Unknown,coworker,home,3
+Female,18,St. John's,White NLer,he said,it's multiple choice and short answer,say,No,None,No,professor,school_building,3
+Female,15,St. John's,White NLer,she was like,what's his last name?,be like,No,None,Unknown,teacher,home,3
+Female,44,St. John's,White (non-NL),she said,there are four people in her centre that need yarn,say,No,None,No,coworker,home,3
+Female,51,Placentia Bay,White NLer,"They're so nice there, He always says",thanks have a good day,say,No,no NLE feature,No,service_worker,car,3
+Female,70,Placentia Bay,White NLer,"He looked out the window and then he goes,",I just wasted me time doing that,go,Yes,"""me"" instead of ""my""",Yes,romantic_partner,phone_call,4
+Female,30,Elsewhere Canada,White (non-NL),He looked at me and went,where'd he go?,other,No,no NLE feature,No,boss,phone_call,4
+Female,17,Paradise,White NLer,He orders us around and he's all like,"Here ya go, go do dis",other,Yes,"yes used a D when pronouncing ""this""",Yes,coworker,home,3
+Female,42,Paradise,White NLer,She was being really crazy and she was all like,you're some foolish,be like,Yes,"yes by using ""some""",No,classmate,other,x
+Female,56,Placentia Bay,White NLer,They were all talking and introducing their cats and they were like,oh you got a cat? This is my cat,be like,No,no NLE feature,No,coworker,video_call,4
+Female,55,Placentia Bay,White NLer,He waved me off and he says,"no worries, me and the by's will handle it",go,Yes,"yes ""by's""",Yes,other,home,3
+Female,21,St. John's,White NLer,She was like,I'm not going back there,be like,No,none noted,Yes,friend,home,3
+Female,23,St. John's,White NLer,She goes,Give me a break,go,No,None noted,Yes,friend,workplace,2
+Female,55,Whitbourne,White NLer,She was like,When do you have to go to school?,be like,No,none noted,No,mother,home,3
+Female,23,International,Asian (unspecified),She was like,Theres no way I'm waiting in that line,be like,No,none noted,No,friend,retail_or_service,2
+Female,23,St. John's,White NLer,She says,I'll do it tomorrow,say,No,none noted,No,friend,home,3
+Female,53,Mount Pearl,White NLer,She says to me,I don't know that word in French.,say,No,N/A,No,other,classroom,1
+Female,22,Mount Pearl,White NLer,They were all like,That was great!,be like,No,N/A,No,group,lecture_hall,1
+Female,45,St. John's,White NLer,So then I was told,Always format your balance sheets alphabetically.,tell,No,N/A,No,professor,lecture_hall,1
+Female,19,Mount Pearl,White NLer,She said right to my face,Whaddya want?,say,Yes,"""Whaddya"" as in ""What do
+you""",Yes,professor,lecture_hall,1
+Female,77,Goose Bay,White NLer,Your Grandfather told me that,Ya gots to get your things in order,tell,Yes,"""Ya gots to"" added the suffix verbal -s on ""got""",Yes,father,unspecified,x
+Female,26,Mount Pearl,White NLer,She says,Don’t be ignorant now,say,No,now,No,friend,car,3
+Male,18,Other,White NLer,On the PA he says,"Goooood marnin', vikings!",say,Yes,"/æ/ in ""morning"" (NL accent)",Yes,teacher,other,x
+Male,57,St. John's,White NLer,He looked up and went,"Here, luh",go,Yes,"""luh""",Yes,friend,street_or_sidewalk,3
+Male,47,Bishop’s Falls,White NLer,So then missus yelled,Git! G'won!,yell,Yes,"/i/ used in ""get"", g'won = ""go on""",Yes,other,other,x
+Male,17,St. John's,White NLer,"He was like,
+um","yes you work
+evenings",be like,Yes,"Hesitation
+(um)",Yes,sibling,workplace,2
+Male,28,Atlantic Canada (non-NL),White NLer,They were all,"like ""im
+gunna leave",be like,No,None,No,romantic_partner,workplace,2
+Male,70,Bonavista Bay,White NLer,He went,"what thy
+doing",go,Yes,"Use of ""thy""
+as second
+person (NLE)",Yes,grandparent,workplace,2
+Male,5,St. John's,White NLer,He said,"67 and
+laughed a lot",say,No,None,No,classmate,school_building,3
+Male,40,Elsewhere Canada,Unknown,"He turns to her
+and goes","I need that
+done now",go,No,None,Yes,boss,workplace,2
+Male,55,Trepassey,White NLer,He be's saying,John is sick,say,Yes,be with (s),Yes,coworker,staff_room_or_break_room,2
+Male,65,Trepassey,White NLer,He was like,yes b'y,be like,Yes,b'y,Yes,friend,home,3
+Male,95,Spaniards Bay,White NLer,The harbour is going to flood,"says I, says they, says them",say,Yes,"says I, says them, -s on says",Yes,self,home,3
+Male,56,Trepassey,White NLer,I'm only after saying,supper is ready,say,Yes,"supper, after saying",Yes,other,home,3
+Male,65,Bishop’s Cove,White NLer,He does be saying,the weather is some good,say,Yes,"some, does be",Yes,other,home,3
+Male,58,CBS,White NLer,"""They says""",it's s'posed to be some heavy.,say,Yes,"-s on says, shortening of ""supposed""",Yes,customer,workplace,2
+Male,4,CBS,White NLer,"""I already said-ed that""",I had fun!,say,No,n/a,No,student,home,3
+Male,24,Other,White NLer,"""She tells me that""",she died!,tell,Yes,-s on tell,Yes,friend,car,3
+Male,62,CBS,White NLer,"""My fadder, when I was back in college use ta always say""",das da gateway drug!',say,Yes,"""fadder"" in place of ""father"", ""use ta"" in place of ""used to"", ""das da"" in place of ""that's the""",Yes,customer,workplace,2
+Male,37,CBS,Indigenous (non-Inuit),"""I said,""","I said, if anyone touches my coffee, I'm comin' for da whole room!",say,Yes,"""da"" in place of ""the""",Yes,friend,workplace,2
+Male,15,CBS,White NLer,"""Mom said""",Mom said that she'll take me.,say,No,n/a,No,other,home,3
+Male,46,CBS,White NLer,"""He said""","He said it's the best ye got, but I hated it",say,Yes,"""ye"" in place of  ""you guys""",Yes,customer,workplace,2
+Male,57,Bonavista,White NLer,"""So he told me""",Ill be back later,tell,No,None,Yes,coworker,workplace,2
+Male,35,Fogo Island,White NLer,"""Then he went""",You need to put this away,go,Yes,"""Went"" instead of ""said""",No,coworker,workplace,2
+Male,37,St. John's,White NLer,"""She goes""",I need a loaner vehicle,go,Yes,"""Goes""",Yes,customer,workplace,2
+Male,25,International,Arab / Middle Eastern,"""She was like""",What are you doing later?,be like,No,None,No,friend,bar,3
+Male,40,Clarenville,White NLer,"""And then she goes""",What are you doing by,go,Yes,"The word ""by""",Yes,coworker,workplace,2
+Male,71,St. John's,White NLer,Like your nan would say,his eyes are a little close together,say,Yes,NL/Irish expression indicating vanity,No,mother,other,x
+Male,17,St. John's,White NLer,I'm like,I don't got an accent,be like,Yes,"use of ""got"" instead of ""have""",No,self,other,x
+Male,60,St. John's,White NLer,I says,"no, my love, that don't make sense",say,Yes,"""my love"" to refer to a young woman; wrong tense of verb ""do""",No,self,other,x
+Male,50,Grand Falls–Windsor,White NLer,I go,I sees you,go,Yes,verbal -s on sees,No,self,home,3
+Male,56,Petty Harbour,White NLer,She says,you gots to wait,say,Yes,verbal -s on gots,No,romantic_partner,party_or_gathering,3
+Male,50,Labrador City,White NLer,He's like,"Jesus, Mary and Joseph",be like,Yes,NL cursing expression,Yes,father,phone_call,4
+Male,22,St. John's,White NLer,He was like,Good morning,be like,No,None noted,No,other,workplace,2
+Male,21,St. John's,White NLer,She said,Okay then,say,No,None noted,Unknown,friend,home,3
+Male,34,St. John's,White NLer,She's like,You're doing so great,be like,No,None noted,Unknown,boss,workplace,2
+Male,20,St. John's,White NLer,He was saying,I don't want to,say,No,None noted,Unknown,friend,restaurant_or_cafe,3
+Male,20,St. John's,White NLer,She was all like,Take some,be like,No,None noted,Unknown,mother,home,3
+Male,19,Torbay,White NLer,She texted me and was like,I'm sorry,be like,No,None noted,Unknown,romantic_partner,home,3
+Male,21,Lawn,White NLer,She was like,knows you're lying,be like,No,"""knows""",Unknown,romantic_partner,home,3
+Male,40,Ontario,East Asian,He was like,"Sorry, sorry, my fault",be like,Yes,Repetition,Unknown,stranger,street_or_sidewalk,3
+Male,27,Other,White NLer,He was like,"B'y, this wind is right cold",be like,Yes,"b'y, right",Unknown,coworker,workplace,2
+Male,22,Deer Lake,White NLer,She was like,"eh, you're after missing class",be like,Yes,"eh, ""after""",Unknown,classmate,lecture_hall,1
+Male,56,Atlantic Canada (non-NL),White (non-NL),She was like,I guess that's just how it is,be like,Yes,Sigh,Unknown,father,retail_or_service,2
+Male,24,CBS,White NLer,I said,I have to work up to Kents now the once,say,No,"""now the once""",No,sibling,phone_call,4
+Male,21,CBS,White NLer,he said,"bhy da Jesus, it's not",say,Yes,"""bhy da Jesus""",Yes,boss,workplace,2
+Male,77,CBS,White NLer,dad goes,"the snowblower only gets goin' when it's in the shed, that's why you have to make a makeshift chummy for it",go,Yes,"""chummy""",No,father,other,x
+Male,58,CBS,White NLer,pop said,"no, don't be goin' at that today",say,Yes,"no, don't be goin' at that",Yes,father,home,3
+Male,21,Trinity Bay North,White NLer,She was like,"You can if you wants, but best not to",be like,Yes,-s on wants,Yes,service_worker,phone_call,4
+Male,52,Atlantic Canada (non-NL),Other,and then he went,sure you knows that,go,No,-s on knows,Yes,father,home,3
+Male,30,CBS,White NLer,She said they wouldnt,cause she's just too young,say,No,N/A,No,other,workplace,2
+Male,77,Mitchells Brook,White NLer,He was sayin,it's right cold,say,Yes,no -g on saying,Yes,friend,other,x
+Male,21,Paradise,White NLer,She was like,I was flirting and you didnt know,be like,No,N/A,No,friend,car,3
+Male,56,Gander,White NLer,She told me to tell you,Goodnight,tell,No,"No, besides having a little bit of a Newfie accent when speaking",No,mother,video_call,4
+Male,24,Lawn,White NLer,He said,He was going to have a look at everything and get back to me,say,No,"No, besides having a little bit of a Newfie accent when speaking",No,boss,school_building,3
+Male,20,Mount Pearl,White NLer,He looked down and was like,Dis be torture,be like,Yes,Verbal D on this,Yes,friend,car,3
+Male,20,Mount Pearl,White NLer,He looked at me and goes,You ghat it ?,go,Yes,Verbal ha on got,Yes,friend,other,x
+Male,21,Mount Pearl,White NLer,He said to him,Yur done,say,Yes,Verbal ur on your,Yes,friend,car,3
+Male,19,Mount Pearl,White NLer,He looked at me and was like,Get it in yah,be like,Yes,Verbal ah in you,Yes,friend,home,3
+Male,20,Mount Pearl,White NLer,He looked around and was like,You hear dat,be like,Yes,Verbal d  on that,Yes,friend,outdoor_public_space,3
+Male,53,St. John's,White NLer,He looked at her and said,I loves yah,say,Yes,Verbal ah in you,Yes,father,home,3
+Male,27,St. John's,White NLer,He looked at him and goes,When is supper,go,No,No,Yes,sibling,home,3
+Male,64,Quidi Vidi,White NLer,He looked at me and was like,Gorgeous bhy,be like,Yes,Verbal hy on boy,Yes,other,outdoor_public_space,3
+Male,52,Trinity Bay,White NLer,he let the family know he was,goin down da patt to get some wood,go,Yes,da patt instead of the path,Yes,other_family,home,3
+Male,75,Trinity Bay,White NLer,he looked at the person walking in and said,de odder ting is ere now,other,Yes,de odder ting instead of the other thing,Yes,father,home,3
+Male,50,Trinity Bay,White NLer,He said to his friend,yes bhy,say,Yes,bhy instead of boy,Yes,father,event_or_venue,1
+Male,18,Trinity Bay,White NLer,he said to my mother,your cat is a pain in my rear end,say,Yes,rear end instead of butt,Yes,romantic_partner,home,3
+Male,21,Trinity Bay,White NLer,he looked at me and said,I never seen ya since da last time i seen ya,other,Yes,da instead of the,Yes,sibling,event_or_venue,1
+Male,30,St. John's,White NLer,They were all like,Ye can't park dere,be like,Yes,"Use of ""ye"" instead of ""you guys,"" and replacement of the ""th"" sound",Yes,stranger,parking_lot,3
+Male,55,Burin Peninsula,White NLer,He was like,Whaddya at b'y,be like,Yes,"Reduction of ""what are you doing?"" and use of b'y",Unknown,friend,retail_or_service,2
+Male,40,Corner Brook,White NLer,And I told him,Quit da jibber jabberin,tell,Yes,"""Da"" takes the form of ""the"" and jibber jabberin reflects ""silliness"" in NL",Yes,other_family,friend_or_family_home,3
+Male,25,Burin Peninsula,White NLer,She swerved and yelled,B'y da lard tundering jesus,yell,No,"""Th"" consonant replaced, use of local NL language (b'y, lard tundering jesus)",Yes,romantic_partner,car,3
+Male,19,Other,White NLer,I was talking to buddy and he was like,You wants to go camping this summer?,be like,Yes,verbal -s on wants,Yes,friend,other,x
+Male,17,St. John's,White NLer,I tried to leave and she went,"Oh c'mon, you knows better dan dat",go,Yes,"verbal -s on knows, ""dan"" and not ""than"", ""dat"" and not ""that""",Yes,mother,home,3
+Male,20,St. John's,White NLer,I was just minding my own business and he goes,Quite da scoff you got there,go,Yes,"da instead of ""the"", scoff used",Yes,friend,other,x
+Male,65,Little Bay,White NLer,I asked where he was going and he goes,the wharft,go,Yes,verbal -t on warft (used in Little Bay),Yes,sibling,home,3
+Male,6,Unknown,White NLer,She was mean to me and said,na na na na boo boo,say,No,N/A,No,student,school_building,3
+Male,19,Petty Harbour,White NLer,She was like,Boys are supposed to spend more for Valentine's,be like,No,N/A,No,mother,phone_call,4
+Male,29,International,South Asian,He was like,Well you're not good looking,be like,No,N/A,No,father,phone_call,4
+Male,19,St. John's,White NLer,Well she said,It was really good,say,No,N/A,No,friend,school_building,3
+Male,50,St. John's,White NLer,She said,I'll take a look at it,say,No,N/A,No,coworker,other,x
+Male,79,St. John's,White NLer,"She says, Where are you? and I'm like",stay where you're at 'til i comes where you're to,say,Yes,"Verbal -s on comes, ""until"" abreviated to 'til",Yes,father,phone_call,4
+Male,20,St. John's,White NLer,She goes,I told ye already,go,Yes,"""Ye"" instead of ""you guys"", switches his accent to a heavier Newfoundland accent and sounds angrier when immitading the teacher",Yes,professor,campus_common_space,3
+Male,39,Paradise,White NLer,Go on now your mudder said,Clean up the kitchen,say,Yes,"""Mother"" abreviated to ""mudder""",Yes,mother,other,x
+Male,15,Paradise,White NLer,They were like,No bhy she's adopted,be like,Yes,"""Bhy"" popular Newfoundland dialect",Yes,sibling,other,x
+Male,20,St. John's,White NLer,He said,Buddy was like i gots no idea where i'm at,say,Yes,"""Buddy"" popular in NLE, voices S on ""gots""",Yes,stranger,library,1
+Male,20,Trinity Bay,White NLer,He looks at me and goes,go clarenville dis evening,go,Yes,TH-stopping (dis for this),Yes,sibling,home,3
+Male,52,Trinity Bay,White NLer,hes on the phone and said,Yeah hopefully we gets a bit out of it anyways,say,Yes,non-standard verb agreement,Yes,father,home,3
+Male,27,Trinity Bay,White NLer,He grabs the keys and said,whoevers coming better come on here now,say,No,"informal ""now""",Yes,friend,other,x
+Male,18,Trinity Bay,White NLer,He looks around and said,if mudder don't need me I shall be there,say,Yes,"Th-stopping ""mudder"" for mother",Yes,friend,retail_or_service,2
+Male,40,Trinity Bay,White NLer,He angrily screamed,I'm gonna pitch dat over the wharf here now,yell,Yes,Th-stopping (dat for that),Yes,stranger,home,3
+Male,15,St. John's,White NLer,he was like,no it's pronounced paprika,be like,No,None,No,friend,home,3
+Male,47,St. John's,White NLer,she said,couper des cheveux en quatre (French idiom meaning splitting hairs),say,No,None,No,coworker,car,3
+Male,7,St. John's,White NLer,And then she said,I'm not gonna play with you anymore,say,No,No,No,other,school_building,3
+Male,19,St. John's,White NLer,And so I says,I just wishes you could settle down,say,Yes,Yes,Yes,other,home,3
+Male,55,St. John's,White NLer,And he said,Mom said I don't gotta go to hockey tonight,say,No,No,No,other,home,3
+Male,10,St. John's,White NLer,But she said,I don't have to do homework,say,No,No,No,other,school_building,3
+Male,16,St. John's,White NLer,But mom said,I can go out with my friends,say,No,No,No,other,home,3
+Male,23,Elsewhere Canada,White (non-NL),We like agreed with eachother and were all like,yeah probably for the best,other,No,no NLE feature,No,sibling,phone_call,4
+Male,15,Paradise,White NLer,He grabbed us and was like,Look! I(he) built a shelf for dad,other,No,no NLE feature,No,father,home,3
+Male,25,Paradise,White NLer,"He honked, and then he said",it was my fault!,other,No,no NLE feature,No,stranger,other,x
+Male,32,CBS,White NLer,He was like,What are you at,be like,Yes,what are you at,Yes,other,parking_lot,3
+Male,55,Placentia,White NLer,He goes,Don’t touch that now my love,go,No,"love, now",Yes,father,home,3
+Male,40,St. John's,White NLer,I'm like,I literally just got here,be like,No,none noted,Yes,stranger,retail_or_service,2
+Male,23,Paradise,White NLer,He went,"Yes b'y , that’s how it goes",go,Yes,yes b'y,Yes,friend,campus_common_space,3
+Male,19,St. John's,White NLer,"Looks at me, and
+goes, at end of
+class",You going out with the b'ys tonight?,go,Yes,"""B'ys"" as in the word for
+guys, or our friends",Yes,friend,lecture_hall,1
+Male,55,Mount Pearl,White NLer,She asks me,Where do 'ya find the health record building?,ask,Yes,"""Where do 'ya"" said
+quickly in succession",Yes,coworker,workplace,2
+Male,20,Mount Pearl,White NLer,My family was like,Happy birthday b'y!,be like,Yes,"""B'y"". in this context he
+was up the shore",Yes,friend,home,3
+Male,40,Mount Pearl,White NLer,I heard once that,Morals in business is more important than profit,other,No,N/A,No,unknown,unspecified,x
+Male,52,St. John's,White NLer,He asked me in the UC,Are ya going to the Regiment game tonight?,ask,Yes,"""Ya"" possible quick verbal expression",Yes,friend,campus_common_space,3
+N/A,18,CBS,Asian (unspecified),Buddy was like,"Send 'er back, bhys!",be like,Yes,"lack of /h/ on ""her"", ""bhys""",Yes,other,school_building,3
+Non-Binary,19,Conception Bay South,White NLer,Thats what she said! she was like,"Don't be at him, he's no good",be like,Yes,"""don't be at him"" popular NLE",Yes,friend,home,3
+Female,20,Paradise,White NLer,I was like,Okay... that was awkward,be like,Yes,Pause,Unknown,friend,school_building,3
+Female,32,Other,White NLer,They were like,the frig re you at,be like,Yes,You at,Unknown,stranger,retail_or_service,2
+Female,52,Other,White NLer,I was like,"what're you at, b'y",be like,Yes,"b'y, idiomatic phrasing",Unknown,mother,home,3
+Female,41,Other,Latin American,She was like,"oh my god, stop staring at me",be like,Yes,laugh,Unknown,other,other,x
+Female,19,Corner Brook,White NLer,He was like,what do you mean they're closed,be like,Yes,"pause, stress",Unknown,friend,restaurant_or_cafe,3
+Female,50,St. John's,White NLer,So I asked him,Who else is gonna be at this party,ask,No,No,Yes,other,home,3
+Female,18,St. John's,White NLer,And then he was like,Are you really gonna start this right now,be like,No,No,Yes,other,phone_call,4
+Female,20,St. John's,Latin American,Them she turned to me and went,I don't have to listen to you,go,Yes,Yes,No,other,school_building,3
+Female,7,St. John's,White NLer,But then she looked at me and said,I hate how you never want to be my partner,say,No,No,No,other,school_building,3
+Female,19,St. John's,White NLer,But then she wrote,I'm on the way,other,No,No,No,other,text_or_chat,4

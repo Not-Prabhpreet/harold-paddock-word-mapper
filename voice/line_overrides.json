@@ -1,0 +1,27 @@
+{
+  "_comment": "Per-line fixes keyed by line ID. speaker: reassign. tts_text: what is sent to ElevenLabs (v3 audio tags like [laughs] allowed). skip: true to leave unvoiced.",
+  "ask_a_question_from_harold_s_dialect_sur_1731ee47": {
+    "tts_text": "[chuckles] Field work? You gonna help me grow me potatoes?",
+    "note": "Field work? You gonna help me grow me potatos?"
+  },
+  "ask_a_question_from_harold_s_dialect_sur_a75478e2": {
+    "tts_text": "[laughing] By da jeezuz. Ya won't find any dialects 'ere!",
+    "note": "By da jeezuz. Ya won't find any dialects 'ere!"
+  },
+  "dragonflyvariant_c0f7a5dd": {
+    "tts_text": "[feigning familiarity] Oh yes, 'orse-stinger. I've heard them called that before.",
+    "note": "Oh yes \"'ORSE-STINGER\". I've heard them called that before"
+  },
+  "poem_7d101c0f": {
+    "tts_text": "[clears throat] Ahem.",
+    "note": "Ahem"
+  },
+  "reply_7dc42e01": {
+    "tts_text": "[chuckles] Yes, that's right!",
+    "note": "Yes, that's right!"
+  },
+  "reply_b937d462": {
+    "tts_text": "[derisive] Ye sounds like yer a townie, by!",
+    "note": "Ye sounds like yer a townie, by!"
+  }
+}

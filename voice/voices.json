@@ -1,0 +1,34 @@
+{
+  "_comment": "One entry per speaker in voice/lines.json. 'design' is the ElevenLabs Voice Design prompt. Speakers with 'remix_of' are remixes of another speaker's voice (same person, different accent): design the base speaker first. voice_id is filled in by 'voices.py pick' or 'voices.py use'.",
+  "model_id": "eleven_v3",
+  "design_model_id": "eleven_ttv_v3",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75
+  },
+  "speakers": {
+    "man": {
+      "voice_id": "",
+      "design": "An older man in his late sixties from Carbonear, a fishing town on Conception Bay, Newfoundland, in 1964. Thick rural Newfoundland English accent with Irish and West Country English roots: dropped h's, 'by' at the end of sentences. Warm, gravelly, weathered voice, unhurried, friendly and teasing, quick to a hearty laugh.",
+      "design_sample": "'Ow's she gon', by? Some hot today, wha? I likes me rain, drizzle and fog, I does. Ya won't find any dialects 'ere!"
+    },
+    "harold": {
+      "voice_id": "",
+      "design": "A young man in his mid-twenties, a bookish graduate student from a small Newfoundland outport in 1964. Mild Newfoundland accent, softened by university. Curious, polite, earnest and a little nerdy, clear articulate delivery, light warm tone.",
+      "design_sample": "Well, I'm a graduate student at MUN conducting field work. I'm actually researching Newfoundland dialects! What do you call that one?"
+    },
+    "harold_local": {
+      "voice_id": "",
+      "design": "Keep the exact same young man, but change his accent to a broad rural Conception Bay Newfoundland accent he is putting on to fit in: dropped h's, 'b'y', a slightly overdone imitation of outport speech.",
+      "design_sample": "Not too bad, b'y. Some hot, wha? 'Ow's she gon' wit' you? I'm only up the road, b'y, just come in on me bike to see what's on the go.",
+      "remix_of": "harold"
+    },
+    "harold_townie": {
+      "voice_id": "",
+      "design": "Keep the exact same young man, but change his accent to a careful, standard St. John's city accent, close to standard Canadian English, formal and a little stiff.",
+      "design_sample": "I'm doing quite well, thank you. And how are you? I'm a graduate student at the university in St. John's, conducting a survey this summer.",
+      "remix_of": "harold"
+    }
+  }
+}

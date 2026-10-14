@@ -1,0 +1,128 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/dialogue_ui.gd" id="1_ui"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_parchment"]
+content_margin_left = 30.0
+content_margin_top = 24.0
+content_margin_right = 30.0
+content_margin_bottom = 20.0
+bg_color = Color(0.957, 0.925, 0.847, 0.97)
+border_width_left = 6
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.36, 0.25, 0.2, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0, 0, 0, 0.35)
+shadow_size = 10
+
+[sub_resource type="SystemFont" id="Font_mono"]
+font_names = PackedStringArray("Courier New", "Courier", "Monospace")
+
+[sub_resource type="SystemFont" id="Font_mono_italic"]
+font_names = PackedStringArray("Courier New", "Courier", "Monospace")
+font_italic = true
+
+[sub_resource type="SystemFont" id="Font_mono_bold"]
+font_names = PackedStringArray("Courier New", "Courier", "Monospace")
+font_weight = 700
+
+[node name="DialogueUI" type="Control" groups=["dialogue_ui"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ui")
+
+[node name="Backdrop" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Dim" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.06, 0.04, 0.55)
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchor_left = 0.08
+anchor_top = 0.5
+anchor_right = 0.92
+anchor_bottom = 0.97
+theme_override_styles/panel = SubResource("StyleBox_parchment")
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Row" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 18
+
+[node name="PortraitBox" type="VBoxContainer" parent="Panel/VBox/Row"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 4
+
+[node name="Portrait" type="TextureRect" parent="Panel/VBox/Row/PortraitBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Caption" type="Label" parent="Panel/VBox/Row/PortraitBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.36, 0.25, 0.2, 1)
+theme_override_fonts/font = SubResource("Font_mono_bold")
+theme_override_font_sizes/font_size = 13
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Body" type="RichTextLabel" parent="Panel/VBox/Row"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.17, 0.149, 0.122, 1)
+theme_override_fonts/normal_font = SubResource("Font_mono")
+theme_override_fonts/italics_font = SubResource("Font_mono_italic")
+theme_override_fonts/bold_font = SubResource("Font_mono_bold")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/italics_font_size = 18
+theme_override_font_sizes/bold_font_size = 18
+bbcode_enabled = true
+text = "..."
+
+[node name="Rule" type="HSeparator" parent="Panel/VBox"]
+layout_mode = 2
+
+[node name="Choices" type="VBoxContainer" parent="Panel/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 2

@@ -1,0 +1,36 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/props/model_slot.gd" id="1_slot"]
+
+[sub_resource type="StandardMaterial3D" id="Mat_bark"]
+albedo_color = Color(0.36, 0.26, 0.18, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_needles"]
+albedo_color = Color(0.13, 0.3, 0.17, 1)
+
+[node name="Spruce" type="Node3D"]
+script = ExtResource("1_slot")
+model_path = "res://assets/props/spruce_tree/model.glb"
+
+[node name="Trunk" type="CSGCylinder3D" parent="."]
+position = Vector3(0, 0.6, 0)
+radius = 0.16
+height = 1.2
+use_collision = true
+material = SubResource("Mat_bark")
+
+[node name="Lower" type="CSGCylinder3D" parent="."]
+position = Vector3(0, 2.4, 0)
+radius = 1.3
+height = 3.2
+cone = true
+sides = 10
+material = SubResource("Mat_needles")
+
+[node name="Upper" type="CSGCylinder3D" parent="."]
+position = Vector3(0, 4.0, 0)
+radius = 0.9
+height = 2.4
+cone = true
+sides = 10
+material = SubResource("Mat_needles")

@@ -1,0 +1,1224 @@
+{
+  "title": "Harold Paddock: Word Mapper",
+  "source_format": "Harlowe 3.3.9",
+  "ifid": "8E3DE2BD-B221-42F1-AE88-1A88EC81AD6F",
+  "start": "Start",
+  "variables": {
+    "lexicon": false,
+    "ethics": false,
+    "question": false,
+    "accent": "zero",
+    "fieldworkScore": 0,
+    "name": ""
+  },
+  "passages": {
+    "Start": {
+      "pid": 1,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "prompt",
+          "var": "name",
+          "text": "Welcome. What is your name?",
+          "default": ""
+        },
+        {
+          "type": "text",
+          "text": "Welcome {name}, to this interactive story for Linguistics 2210.\n[center]~ ~ ~[/center]\nToday is {current_date}. To get things started we're going to take a step back - to the summer of 1964.\n\nOur story begins with a young man straddling a 10-speed bicycle, his feet flat on the gravel shoulder of a quiet highway. He's dressed in a white t-shirt, jogging shorts, and sneakers appropriate for a long haul. Bookish, thick glasses frame his face.\n\nHe's looking at a large "
+        },
+        {
+          "type": "reveal",
+          "id": "sign",
+          "label": "road sign.",
+          "content": [
+            {
+              "type": "text",
+              "text": ".. this one, to be precise. "
+            },
+            {
+              "type": "image",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NL_Route_70.svg/240px-NL_Route_70.svg.png"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n\nThe highway is not particularly busy - but then again, it never is. Being on the Avalon Peninsula means it's as far off the beaten trail as you can get in Canada.\n\nIt's a hot day across the island, an unusual meterological event in Newfoundland, so the man on the bicycle is taking a water break, wiping away sweat and looking at a crisp, white notebook. It's spine is yet to be cracked in any serious way.\n\n"
+        },
+        {
+          "type": "reveal",
+          "id": "harold",
+          "label": "The man is Harold Paddock",
+          "content": [
+            {
+              "type": "text",
+              "text": ". He will go on to become a world-renowned professor of linguistics by pioneering English dialect research across Newfoundland and Labrador. But for now, he's just Harold"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", a young "
+        },
+        {
+          "type": "reveal",
+          "id": "owlish",
+          "label": "owlish interrogator",
+          "content": [
+            {
+              "type": "image",
+              "src": "https://collections.mun.ca/digital/api/singleitem/image/sjcarew/834/default.jpg"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", a graduate student in the Department of English Language and Literature at Memorial University of Newfoundland.\n\nYour job here is to help get Harold started. What should he to do first?\n\n"
+        },
+        {
+          "type": "set",
+          "var": "question",
+          "value": false
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "choice",
+          "text": "Continue down the highway into the next town",
+          "target": "Carbonear 02"
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "choice",
+          "text": "Open field journal",
+          "target": "Field Journal"
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "choice",
+          "text": "Wait! What the heck is linguistics?",
+          "target": "What is linguistics"
+        }
+      ],
+      "links": [
+        "Carbonear 02",
+        "Field Journal",
+        "What is linguistics"
+      ],
+      "sets": [
+        {
+          "var": "question",
+          "value": false
+        }
+      ],
+      "reads": []
+    },
+    "Field Journal": {
+      "pid": 2,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "question",
+                "op": "is",
+                "value": false
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "text",
+              "text": "This is Harold Paddock's field journal that he uses to collect his dialect notes. You have no data to record, yet. There are a few questions and scribbles on the first page.\n"
+            },
+            {
+              "type": "choice",
+              "text": "Read scribbles.",
+              "target": "Poem"
+            }
+          ],
+          "else": [
+            {
+              "type": "text",
+              "text": "[center][b]The End[/b][/center]\n\nIn this short, interactive, creative, non-fiction narrative you, {name}, witnessed a young Harold Paddock enter the town of Carbonear to start his pioneering work in dialectology.\nThe dialogue with an older man from Carbonear illustrated how some people might respond to linguistic variation, i.e. Harold using the {accent} accent. This stylistic option that is avaiable to some speakers can be perceived differently, sometimes positively or negatively, depending on the social context."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n\n"
+        },
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "question",
+                "op": "is",
+                "value": true
+              },
+              {
+                "var": "ethics",
+                "op": "is",
+                "value": true
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "text",
+              "text": "In playing this game, you guided Harold in identifying himself as a researcher conducting a study on regional dialects of Newfoundland and Labrador English. You invited the man to participate being sure to elicit his informed consent. Ethical standards in linguistics research ensures researchers get consent from participants in a study, so, GOOD work!"
+            }
+          ],
+          "else": []
+        },
+        {
+          "type": "text",
+          "text": "\n\n"
+        },
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "question",
+                "op": "is",
+                "value": true
+              },
+              {
+                "var": "lexicon",
+                "op": "is",
+                "value": true
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "text",
+              "text": "You also helped Harold dutifully record his first dialect finding, noting important details about the speaker:\n\n1. an older man in Carbonear uses the DRAGONFLY variant \"[i]'orse-stinger[/i]\"."
+            }
+          ],
+          "else": []
+        },
+        {
+          "type": "text",
+          "text": "\n\n"
+        },
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "question",
+                "op": "is",
+                "value": true
+              },
+              {
+                "var": "lexicon",
+                "op": "is",
+                "value": false
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "text",
+              "text": "The journal is where Harold would have written down the dragonfly variant if he remembered to. Usually this isn't like him."
+            }
+          ],
+          "else": []
+        },
+        {
+          "type": "text",
+          "text": "\n\n"
+        },
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "question",
+                "op": "is",
+                "value": true
+              },
+              {
+                "var": "ethics",
+                "op": "is",
+                "value": false
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "text",
+              "text": "Ethical standards in linguistics research ensures researchers get consent from participants in a study. Any attempt to coerce or influence someone without their full and informed consent is a violation of these standards. Remember that Harold needs to follow the protocol. "
+            }
+          ],
+          "else": []
+        },
+        {
+          "type": "text",
+          "text": "\n\n"
+        },
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "question",
+                "op": "is",
+                "value": true
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "choice",
+              "text": "Credits",
+              "target": "Credits"
+            }
+          ],
+          "else": []
+        }
+      ],
+      "links": [
+        "Credits",
+        "Poem"
+      ],
+      "sets": [],
+      "reads": [
+        "ethics",
+        "lexicon",
+        "question"
+      ]
+    },
+    "Carbonear 02": {
+      "pid": 3,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "carbonear_02_1f5d5b07",
+              "speaker": "man",
+              "text": "'ow's she gon', by"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Harold gives the bicycle a gentle push forward and follows up with a few turns of the pedals. This gives the bike enough momentum to sail into the first driveway just inside the town limits. It's home to a rustic, saltbox house. He spots a man working away in his window garden. Harold raises his hand in a polite wave.\n\n[i]\"'ow's she gon', by\"[/i], the man calls out.\n\nHarold quickly assesses the man's pronunciation. He's a local. Probably born and raised in this same house. Never left.\n\nHarold responds,\n\n"
+        },
+        {
+          "type": "choice",
+          "text": "in the local accent",
+          "target": "in the local accent"
+        },
+        {
+          "type": "text",
+          "text": " "
+        },
+        {
+          "type": "choice",
+          "text": "in his Long Branch vernacular",
+          "target": "in his Long Branch vernacular"
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "choice",
+          "text": "in a St. John's standard accent",
+          "target": "in a St. John's standard accent"
+        }
+      ],
+      "links": [
+        "in a St. John's standard accent",
+        "in his Long Branch vernacular",
+        "in the local accent"
+      ],
+      "sets": [],
+      "reads": []
+    },
+    "Carbonear 03": {
+      "pid": 4,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "carbonear_03_44b41acf",
+              "speaker": "man",
+              "text": "No matter. We loves ya just the same no matter where you're at."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "[i]\"No matter. We loves ya just the same no matter where you're at.\"[/i] the man assures Harold.\n\n"
+        },
+        {
+          "type": "choice",
+          "text": "Talk about the weather a bit",
+          "target": "Talk about the weather a bit"
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "choice",
+          "text": "Ask a question from Harold's dialect survey",
+          "target": "Ask a question from Harold's dialect survey"
+        }
+      ],
+      "links": [
+        "Ask a question from Harold's dialect survey",
+        "Talk about the weather a bit"
+      ],
+      "sets": [],
+      "reads": []
+    },
+    "Ask a question from Harold's dialect survey": {
+      "pid": 5,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "set",
+          "var": "ethics",
+          "value": true
+        },
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "ask_a_question_from_harold_s_dialect_sur_f8206d64",
+              "speaker": "harold",
+              "text": "I'll let you get back to work but I just wanted to ask a question."
+            },
+            {
+              "id": "ask_a_question_from_harold_s_dialect_sur_ceb5c234",
+              "speaker": "man",
+              "text": "Go on 'den"
+            },
+            {
+              "id": "ask_a_question_from_harold_s_dialect_sur_3ceccbd0",
+              "speaker": "harold",
+              "text": "Well, I'm a graduate student at MUN conducting field work."
+            },
+            {
+              "id": "ask_a_question_from_harold_s_dialect_sur_1731ee47",
+              "speaker": "man",
+              "text": "Field work? You gonna help me grow me potatos?",
+              "tts_text": "[chuckles] Field work? You gonna help me grow me potatoes?"
+            },
+            {
+              "id": "ask_a_question_from_harold_s_dialect_sur_a86ac5af",
+              "speaker": "harold",
+              "text": "No, I'm actually researching Newfoundland dialects!"
+            },
+            {
+              "id": "ask_a_question_from_harold_s_dialect_sur_a75478e2",
+              "speaker": "man",
+              "text": "By da jeezuz. Ya won't find any dialects 'ere!",
+              "tts_text": "[laughing] By da jeezuz. Ya won't find any dialects 'ere!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "[i]\"I'll let you get back to work but I just wanted to ask a question.[/i]\n\nHe looks at Harold quizzically. [i]\"Go on 'den\"[/i], he says continuing to hoe the garden.\n\n[i]\"Well, I'm a graduate student at MUN conducting field work.\"[/i]\n\n[i]\"Field work? You gonna help me grow me potatos?\"[/i] he says with a hearty chuckle.\n\nHarold responds with a belly-laugh, himself. When the two quiet down some he says, [i]\"No, I'm actually researching Newfoundland dialects!\"[/i]\n\n[i]\"By da jeezuz. Ya won't find any dialects 'ere!\"[/i] he says laughing even harder now."
+        },
+        {
+          "type": "choice",
+          "text": "Next",
+          "target": "Question"
+        }
+      ],
+      "links": [
+        "Question"
+      ],
+      "sets": [
+        {
+          "var": "ethics",
+          "value": true
+        }
+      ],
+      "reads": []
+    },
+    "Talk about the weather a bit": {
+      "pid": 6,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "set",
+          "var": "ethics",
+          "value": false
+        },
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "talk_about_the_weather_a_bit_bf2a2233",
+              "speaker": "harold",
+              "text": "Some hot today."
+            },
+            {
+              "id": "talk_about_the_weather_a_bit_a2d76aaa",
+              "speaker": "man",
+              "text": "It's got me drove, young man. I likes me rain, drizzle and fog, I does. With the heat, the bugs are all out. Oh, like that one 'dere."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Harold: [i]\"Some hot today.\"[/i]\n\nMan: [i]\"It's got me drove, young man. I likes me rain, drizzle and fog, I does. With the heat, the bugs are all out. Oh, like that one "
+        },
+        {
+          "type": "reveal",
+          "id": "insect",
+          "label": "'dere.",
+          "content": [
+            {
+              "type": "image",
+              "src": "https://live.staticflickr.com/6066/6047918411_38be685b36_w.jpg"
+            },
+            {
+              "type": "text",
+              "text": " "
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\"[/i]\n"
+        },
+        {
+          "type": "text",
+          "text": "\n\n"
+        },
+        {
+          "type": "choice",
+          "text": "Next",
+          "target": "Question"
+        }
+      ],
+      "links": [
+        "Question"
+      ],
+      "sets": [
+        {
+          "var": "ethics",
+          "value": false
+        }
+      ],
+      "reads": []
+    },
+    "DragonflyVariant": {
+      "pid": 7,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "dragonflyvariant_802b3ef9",
+              "speaker": "man",
+              "text": "'Dat's a 'ORSE-STINGER. Everyone 'round 'ere knows 'dat"
+            },
+            {
+              "id": "dragonflyvariant_c0f7a5dd",
+              "speaker": "harold",
+              "text": "Oh yes \"'ORSE-STINGER\". I've heard them called that before",
+              "tts_text": "[feigning familiarity] Oh yes, 'orse-stinger. I've heard them called that before."
+            },
+            {
+              "id": "dragonflyvariant_bcc3a4ca",
+              "speaker": "harold",
+              "text": "Well thanks for your time and may your potatoes grow big and healthy."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "[i]\"'Dat's a 'ORSE-STINGER. Everyone 'round 'ere knows 'dat,\"[/i] he responds.\n\n[i]\"Oh yes \"'ORSE-STINGER\". I've heard them called that before,\"[/i] Harold feigns.\n\nAfter a bit more chit-chat Harold signals to leave, [i]\"Well thanks for your time and may your potatoes grow big and healthy.\"[/i]\n\nThe man lets out a boisterous laugh and goes back to hoeing in the garden.\n\nHarold picks up his bicycle and retrieves his field journal from the ground.\n\n"
+        },
+        {
+          "type": "set",
+          "var": "lexicon",
+          "value": true
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "choice",
+          "text": "Get back on bike",
+          "target": "Carbonear End"
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "choice",
+          "text": "Look at field journal",
+          "target": "Field Journal"
+        }
+      ],
+      "links": [
+        "Carbonear End",
+        "Field Journal"
+      ],
+      "sets": [
+        {
+          "var": "lexicon",
+          "value": true
+        }
+      ],
+      "reads": []
+    },
+    "Carbonear End": {
+      "pid": 8,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "carbonear_end_0c106900",
+              "speaker": "harold",
+              "text": "Shoot. I'll need to be more diligent next time."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Harold gets back on his bicycle eager to meet his next participant. As he rides along he thinks about what he'll have for dinner tonight. He gets lost in thought and because he didn't write down the variant for dragonfly in his journal, he forgot what the woman told him. That's unfortuante - every piece of data counts.\n\nHe snaps his fingers on one hand while gripping the bike handle with the other.\n\n[i]\"Shoot. I'll need to be more diligent next time.\"[/i]\n"
+        },
+        {
+          "type": "set",
+          "var": "lexicon",
+          "value": false
+        },
+        {
+          "type": "choice",
+          "text": "Sheepishly open journal",
+          "target": "Field Journal"
+        }
+      ],
+      "links": [
+        "Field Journal"
+      ],
+      "sets": [
+        {
+          "var": "lexicon",
+          "value": false
+        }
+      ],
+      "reads": []
+    },
+    "Poem": {
+      "pid": 9,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "poem_7d101c0f",
+              "speaker": "harold",
+              "text": "Ahem",
+              "tts_text": "[clears throat] Ahem."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\"[i]Ahem[/i]\". Harold clears his through and starts in his western Notre Dame Bay accent:\n\n"
+        },
+        {
+          "type": "style",
+          "style": "centered",
+          "content": [
+            {
+              "type": "voice",
+              "lines": [
+                {
+                  "id": "poem_be83d37b",
+                  "speaker": "harold",
+                  "text": "And I John Alone on an island See a New Land Where all is alive and one, Where the stone given in lieu of a loaf Becomes bread, Where the roses grown in lieu of a life Become fish, Which leap for joy From streams of veinless blood In the dusk Become dawn."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "\"[i]And I John\nAlone on an island\nSee a New Land\nWhere all is alive and one,\nWhere the stone given in lieu of a loaf\nBecomes bread,\nWhere the roses grown in lieu of a life\nBecome fish,\nWhich leap for joy\nFrom streams of veinless blood\nIn the dusk\nBecome dawn.[/i]\""
+            }
+          ]
+        },
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "poem_622f3742",
+              "speaker": "harold",
+              "text": "Some poetic, luh!"
+            },
+            {
+              "id": "poem_98f4370f",
+              "speaker": "harold",
+              "text": "It's all me. I wrote that."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n\n\"[i]Some poetic, luh![/i]\" Harold boasts proudly. \"[i]It's all me. I wrote that.[/i]\"\n\n"
+        },
+        {
+          "type": "choice",
+          "text": "Continue",
+          "target": "Carbonear 02"
+        }
+      ],
+      "links": [
+        "Carbonear 02"
+      ],
+      "sets": [],
+      "reads": []
+    },
+    "in the local accent": {
+      "pid": 10,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "in_the_local_accent_bf2df695",
+              "speaker": "harold_local",
+              "text": "Not too bad, b'y. Some hot, wha?",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "var": "accent",
+          "value": "Local"
+        },
+        {
+          "type": "goto",
+          "target": "Reply"
+        }
+      ],
+      "links": [
+        "Reply"
+      ],
+      "sets": [
+        {
+          "var": "accent",
+          "value": "Local"
+        }
+      ],
+      "reads": []
+    },
+    "in his Long Branch vernacular": {
+      "pid": 11,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "in_his_long_branch_vernacular_947c36a1",
+              "speaker": "harold",
+              "text": "Not too bad at all, sir. How's yourself?",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "var": "accent",
+          "value": "Long Branch"
+        },
+        {
+          "type": "goto",
+          "target": "Reply"
+        }
+      ],
+      "links": [
+        "Reply"
+      ],
+      "sets": [
+        {
+          "var": "accent",
+          "value": "Long Branch"
+        }
+      ],
+      "reads": []
+    },
+    "in a St. John's standard accent": {
+      "pid": 12,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "voice",
+          "lines": [
+            {
+              "id": "in_a_st_john_s_standard_accent_2b43345e",
+              "speaker": "harold_townie",
+              "text": "I'm doing quite well, thank you. And how are you?",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "var": "accent",
+          "value": "St. John's Standard"
+        },
+        {
+          "type": "goto",
+          "target": "Reply"
+        }
+      ],
+      "links": [
+        "Reply"
+      ],
+      "sets": [
+        {
+          "var": "accent",
+          "value": "St. John's Standard"
+        }
+      ],
+      "reads": []
+    },
+    "StoryInit": {
+      "pid": 13,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "set",
+          "var": "lexicon",
+          "value": false
+        },
+        {
+          "type": "set",
+          "var": "ethics",
+          "value": false
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "set",
+          "var": "question",
+          "value": false
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "set",
+          "var": "accent",
+          "value": "zero"
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "set",
+          "var": "fieldworkScore",
+          "value": 0
+        }
+      ],
+      "links": [],
+      "sets": [
+        {
+          "var": "lexicon",
+          "value": false
+        },
+        {
+          "var": "ethics",
+          "value": false
+        },
+        {
+          "var": "question",
+          "value": false
+        },
+        {
+          "var": "accent",
+          "value": "zero"
+        },
+        {
+          "var": "fieldworkScore",
+          "value": 0
+        }
+      ],
+      "reads": [],
+      "author_notes": [
+        "The tapes possess a two.fold value: they enable me to check\nmy own transcriptions, and they often contain free conversation which enables me to check elicited forms against\nnon-elicited forms ... from Harold's Carbonear thesis"
+      ]
+    },
+    "owlish interrogator": {
+      "pid": 14,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "text",
+          "text": "“an owlish interrogator” (Paddock, 1966, p. 6)"
+        }
+      ],
+      "links": [],
+      "sets": [],
+      "reads": []
+    },
+    "Reply": {
+      "pid": 15,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "accent",
+                "op": "contains",
+                "value": "Local"
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "voice",
+              "lines": [
+                {
+                  "id": "reply_5cc46d5e",
+                  "speaker": "man",
+                  "text": "You tryin' to sell me some encyclopedias?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Good try. He's impressed but knows you're not a local.\n\n[i]\"You tryin' to sell me some encyclopedias?\"[/i] he asks.\n\n[b]Well, I'll be damned[/b], thought Harold. [b]I was sure I had this accent down pat[/b].\n\n(By the way, {name}, you're able to read Harold's thoughts in this game.)\n\n"
+            },
+            {
+              "type": "choice",
+              "text": "Next",
+              "target": "Carbonear 03"
+            }
+          ],
+          "else": []
+        },
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "accent",
+                "op": "contains",
+                "value": "Long Branch"
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "voice",
+              "lines": [
+                {
+                  "id": "reply_ee01e137",
+                  "speaker": "man",
+                  "text": "Ah a young fella from down Long Branch!"
+                },
+                {
+                  "id": "reply_7dc42e01",
+                  "speaker": "harold",
+                  "text": "Yes, that's right!",
+                  "tts_text": "[chuckles] Yes, that's right!"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "[i]\"Ah a young fella from down Long Branch![/i]\" the man smiles and shakes Harold's hand.\n\n[i]\"Yes, that's right!\"[/i] Harold chuckles at being recognized.\n\n"
+            },
+            {
+              "type": "choice",
+              "text": "Next",
+              "target": "Carbonear 03"
+            }
+          ],
+          "else": []
+        },
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "accent",
+                "op": "contains",
+                "value": "St. John's Standard"
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "voice",
+              "lines": [
+                {
+                  "id": "reply_b937d462",
+                  "speaker": "man",
+                  "text": "Ye sounds like yer a townie, by!",
+                  "tts_text": "[derisive] Ye sounds like yer a townie, by!"
+                },
+                {
+                  "id": "reply_b63b3321",
+                  "speaker": "harold",
+                  "text": "Well, originally from Long Branch"
+                },
+                {
+                  "id": "reply_8586f65a",
+                  "speaker": "man",
+                  "text": "Is 'dat right!"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "[i]\"Ye sounds like yer a townie, by!\"[/i] the man responds, somewhat derisively.\n\n[i]\"Well, originally from Long Branch,\"[/i] replies Harold.\n\n[i]\"Is 'dat right!\"[/i], the man exclaims.\n\n"
+            },
+            {
+              "type": "choice",
+              "text": "Next",
+              "target": "Carbonear 03"
+            }
+          ],
+          "else": []
+        }
+      ],
+      "links": [
+        "Carbonear 03"
+      ],
+      "sets": [],
+      "reads": [
+        "accent"
+      ]
+    },
+    "Question": {
+      "pid": 16,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "set",
+          "var": "question",
+          "value": true
+        },
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "ethics",
+                "op": "is",
+                "value": true
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "voice",
+              "lines": [
+                {
+                  "id": "question_df23e354",
+                  "speaker": "harold",
+                  "text": "OK, here's the question: What do you call those big flying insects with two pairs of wings that catches smaller insects, especially around ponds and marshes?"
+                },
+                {
+                  "id": "question_f56f5068",
+                  "speaker": "harold",
+                  "text": "Speak of the devil! What do you call that one?"
+                },
+                {
+                  "id": "question_c07681f0",
+                  "speaker": "man",
+                  "text": "'dat one? You kiddin' me?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Harold identifies himself as a researcher and makes sure he has the man's informed consent before continuing.\n\n[i]\"OK, here's the question: What do you call those big flying insects with two pairs of wings that catches smaller insects, especially around ponds and marshes?\"[/i]\n\nAnd just at that moment, the insect in question flies right between Harold and the man.\n\n[i]\"Speak of the devil! What do you call that one?\"[/i] Harold owlishly interrogates.\n\nMan: [i]\"'dat "
+            },
+            {
+              "type": "reveal",
+              "id": "insect",
+              "label": "one",
+              "content": [
+                {
+                  "type": "image",
+                  "src": "https://live.staticflickr.com/6066/6047918411_38be685b36_w.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "? You kiddin' me?\"[/i]\n"
+            }
+          ],
+          "else": []
+        },
+        {
+          "type": "if",
+          "cond": {
+            "all": [
+              {
+                "var": "ethics",
+                "op": "is",
+                "value": false
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "voice",
+              "lines": [
+                {
+                  "id": "question_d0a7e1e3",
+                  "speaker": "harold",
+                  "text": "Oh, look at that. What do you call that one?"
+                },
+                {
+                  "id": "question_c07681f0",
+                  "speaker": "man",
+                  "text": "'dat one? You kiddin' me?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "\"Oh, look at that. What do you call that one?\" Harold owlishly interrogates.\n\nMan: \"'dat one? You kiddin' me?\""
+            }
+          ],
+          "else": []
+        },
+        {
+          "type": "text",
+          "text": "\n\n"
+        },
+        {
+          "type": "choice",
+          "text": "Next",
+          "target": "DragonflyVariant"
+        }
+      ],
+      "links": [
+        "DragonflyVariant"
+      ],
+      "sets": [
+        {
+          "var": "question",
+          "value": true
+        }
+      ],
+      "reads": [
+        "ethics"
+      ]
+    },
+    "Credits": {
+      "pid": 17,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "text",
+          "text": "[center][b]Credits[b][/center]\n\nThis game is a work in progress, designed by Dr. Paul De Decker for students in Linguistics 2210: Language in Newfoundland and Labrador.\n\nImages:\n\n\"[url=https://www.flickr.com/photos/60417477@N00/6047918411]DRAGONFLY[/url]\" by [url=https://www.flickr.com/photos/60417477@N00]whologwhy[/url] is licensed under <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by/2.0/?ref=openverse\">CC BY 2.0 "
+        },
+        {
+          "type": "image",
+          "src": "https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        },
+        {
+          "type": "image",
+          "src": "https://mirrors.creativecommons.org/presskit/icons/by.svg"
+        },
+        {
+          "type": "text",
+          "text": "</a>.\n\"Construction of the Queen Elizabeth II Library, MUN, 35 years ago!\"\nPosted on Twitter May 30, 2017 by @MUN-asc\"\n\nTexts:\nPaddock, H. J. (1966). A dialect survey of Carbonear, Newfoundland (Doctoral dissertation, Memorial University of Newfoundland).\n[center]~ ~ ~[/center]\nHarold completed two dialect surveys (starting in the 1970's and later in the 1980's) which, according to the Dialect Atlast of Newfoundland and Labrador, employed the following assistants:  Noreen Atkins, Leila Clase, Philip Hiscock, Kathleen Manuel, Brenda Renaud, and Michael Taft."
+        }
+      ],
+      "links": [],
+      "sets": [],
+      "reads": [],
+      "author_notes": [
+        "Harold Paddock did not ride a bicycle across the Avalon to collect dialect data. The bicycle he did not ride did not have a recording device at one end and a typewriter at the other. If such a bicycle exists, please contact the main author, Dr. Paul De Decker, because that would be one cool bike! A photo will also be sufficient. .",
+        "this is part of a larger mystery/adventure game called \"Something's Fishy in Carbonear\""
+      ]
+    },
+    "What is linguistics": {
+      "pid": 18,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "text",
+          "text": "All natural languages are structured and follow unwritten sets of rules or principles. They are largely hidden until you take your first linguistics class and then they all become obvious. For those of you just joining us, and not sure what any of this might mean, let me get you caught up quickly.\n\nYou can read more at Table of Contents > Topics > Part One: The Languages > Language has Structure\n\nhttps://online.mun.ca/d2l/le/content/539128/viewContent/4873732/View"
+        }
+      ],
+      "links": [],
+      "sets": [],
+      "reads": []
+    },
+    "Global Navigation Footer": {
+      "pid": 19,
+      "tags": [],
+      "blocks": [
+        {
+          "type": "text",
+          "text": ":: Global Navigation Footer "
+        },
+        {
+          "type": "text",
+          "text": "footer\n\n"
+        },
+        {
+          "type": "choice",
+          "text": "📓 Open Fieldwork Ledger",
+          "target": "Fieldwork Ledger"
+        }
+      ],
+      "links": [
+        "Fieldwork Ledger"
+      ],
+      "sets": [],
+      "reads": []
+    }
+  },
+  "unreachable": [
+    "Global Navigation Footer",
+    "StoryInit",
+    "owlish interrogator"
+  ]
+}

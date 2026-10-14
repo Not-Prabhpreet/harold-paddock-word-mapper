@@ -1,0 +1,8 @@
+{
+  "_comment": "DRAFT lines the Twine has no text for. The professor should approve or rewrite them. Each plays when its passage runs. Harold's reply uses a different voice per accent.",
+  "lines": [
+    {"passage": "in the local accent", "speaker": "harold_local", "text": "Not too bad, b'y. Some hot, wha?"},
+    {"passage": "in his Long Branch vernacular", "speaker": "harold", "text": "Not too bad at all, sir. How's yourself?"},
+    {"passage": "in a St. John's standard accent", "speaker": "harold_townie", "text": "I'm doing quite well, thank you. And how are you?"}
+  ]
+}
